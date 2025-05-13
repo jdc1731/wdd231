@@ -1,0 +1,69 @@
+@media screen and (min-width: 499px) {
+    div {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+    }
+  
+    header, main, footer {
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+  
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      height: 60px;
+      padding: 0 20px;
+      position: relative;
+    }
+  
+    .header-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%; 
+    }
+  
+     h1 {
+      margin: 0;
+      font-size: 30px;
+      width: 500px;
+    }
+  
+    .footer-content {
+      max-width: 1000px;
+      margin: 0 auto;
+      text-align: center;
+    }
+  
+    #nav-menu {
+      display: flex;
+      flex-direction: row;
+      background-color: #4B0082;
+      padding: 10px 0;
+      position: static; 
+      margin-left: auto; 
+    }
+  
+    #nav-menu a {
+      display: block;
+      padding: 10px;
+    }
+  
+    /* Style the hamburger button */
+    .menu-icon {
+      background: none;
+      border: none;
+      cursor: pointer;
+      display: block;
+    }
+  
+    /* Hide the menu button */
+    #menu-button {
+      display: none; 
+    }
+  }
+  

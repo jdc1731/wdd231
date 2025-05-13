@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Joyce Keil">
+    <meta name="description" content="WDD231- Web Frontend Development - Joyce Keil - Course Home Page">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/index-large.css">
+    <script src="scripts/index.js" defer></script>
+    <link rel="icon" href="data:,">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+
+    <title>WDD 231-Web Frontend Development-Joyce Keil| Course Home Page</title>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+          <div class="identity">
+            <img src="images/profile.webp" alt="Photo of Joyce Keil">
+            <span>Joyce Keil</span>
+          </div>
+          <button id="menu-button">&#9776;</button>
+        </div>
+      </header>
+        <nav id="nav-menu">
+            <a href="index.html" id="home">Home</a>
+            <a href="#" id="chamber">Chamber</a>
+            <a href="#" id="final">Final</a>
+            <a href="#" id="github-profile">GitHub Profile</a>
+            <a href="#" id="linkedin">LinkedIn</a>
+        </nav>
+    <main>
+        <h1>Home</h1>
+        <div class="top">
+        <section class="section1"><h2>Course Work</h2>
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+              </ul></section>
+        <section class="section2"><h2>Helper, Utah</h2>
+        <img src="images/utah.webp" alt=""></section>
+    </div>
+        <section class="section3"><h2>Web and Computer Programming Certificate</h2>
+            <div class="tab-buttons">
+                <button onclick="filterClasses('All')">All</button>
+                <button onclick="filterClasses('WDD')">WDD</button>
+                <button onclick="filterClasses('CSE')">CSE</button>
+              </div>
+              <ul id="class-list"></ul>
+            </section>
+    </main>
+    <footer class="footer-content"><p>&copy; <span id="current-year"></span> &#9822;Joyce Keil | Utah &#9822;</p>
+            <p id="last-modified"></p><span>&#9822;</span>
+</footer>
+       
+</body>
+</html>
