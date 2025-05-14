@@ -59,6 +59,15 @@ const courses = [
   },
 ];
 
+const calculateCreditsCompleted = () => {
+  const completedCredits = courses
+    .filter(course => course.completed)
+    .reduce((total, course) => total + course.credits, 0);
+
+  const creditsCountElement = document.getElementById("credits-count");
+  creditsCountElement.textContent = completedCredits;
+};
+
 const filterCourses = (type) => {
   let filteredCourses;
 
@@ -82,7 +91,13 @@ const filterCourses = (type) => {
 
     courseList.appendChild(courseDiv);
   });
+
+  // Update the credits completed counter
+  calculateCreditsCompleted();
 };
+
+// Call the function initially to display the credits on page load
+calculateCreditsCompleted();
 
 
 

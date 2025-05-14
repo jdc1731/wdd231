@@ -18,13 +18,11 @@
 </head>
 <body>
     <header>
-        <!-- <div class="header-content"> -->
           <div class="identity">
             <img src="images/profile.webp" alt="Photo of Joyce Keil">
             <span>Joyce Keil</span>
-          <!-- </div> -->
           <button id="menu-button">&#9776;</button>
-        <!-- </div> -->
+          </div>
       </header>
         <nav id="nav-menu">
             <a href="index.html" id="home">Home</a>
@@ -45,14 +43,18 @@
         <section class="section2"><h2>Helper, Utah</h2>
         <img src="images/utah.webp" alt=""></section>
     </div>
-        <section class="section3"><h2>Web and Computer Programming Certificate</h2>
-            <div class="tab-buttons">
-                <button onclick="filterCourses('All')">All Courses</button>
-                <button onclick="filterCourses('WDD')">WDD Courses</button>
-                <button onclick="filterCourses('CSE')">CSE Courses</button>
-              </div>
-              <div id="course-list" class="course-grid"></div>
-            </section>
+        <section class="section3">
+  <h2>Web and Computer Programming Certificate</h2>
+  <div class="tab-buttons">
+    <button onclick="filterCourses('All')">All Courses</button>
+    <button onclick="filterCourses('WDD')">WDD Courses</button>
+    <button onclick="filterCourses('CSE')">CSE Courses</button>
+  </div>
+  <div id="course-list" class="course-grid"></div>
+  <div id="credits-completed">
+    <h3>Credits Completed: <span id="credits-count">0</span></h3>
+  </div>
+</section>
     </main>
     <footer class="footer-content"><p>&copy; <span id="current-year"></span> &#9822;Joyce Keil | Utah &#9822;</p>
             <p id="last-modified"></p><span>&#9822;</span>

@@ -15,7 +15,7 @@
     justify-content: center;
     align-items: center;
     gap: 10px;
-    margin-left: ;
+
 }
 
 footer {
@@ -39,12 +39,12 @@ header {
     justify-content: center;    
     align-items: center;        
     padding: 10px 0;
+    font-size: 50px;
 }
 
 main img {
     display: block;
     margin: 20px auto;
-    object-fit: cover;
     width: 250px;
 }
 
@@ -55,25 +55,24 @@ a {
     cursor: pointer;
 }
 
-a:hover {
-    color: var(--secondary-color);
-
-}
 
 .header-content {       
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px;
-    width: 100%;
     }
 
     /* Show hamburger icon */
-.menu-button {
+#menu-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 25px;
+    background: none;
+    color: white;
     border: none;
     cursor: pointer;
-    display: block;
-    background-color: var(--secondary-color);
     }
   
 
@@ -97,6 +96,13 @@ a:hover {
     width: 100%;
     text-align: center;
     color: black;
+    background-color: var(--secondary-color);
+    height: 70px;
+    }
+
+#nav-menu a:hover {
+    background-color: darkgrey;
+    color: white; 
     }
 
 nav {
@@ -104,6 +110,7 @@ nav {
   max-width: 1000px;
   margin: 0 auto;
   box-sizing: border-box;
+  
   
 }
 
@@ -127,7 +134,7 @@ h1 {
 .top {
     display: flex;
     gap: 1rem;
-  }
+}
   
  .section1 {
     width: 55%;
@@ -153,9 +160,9 @@ h1 {
     
     .header-content {
         display: flex;
-        justify-content: space-between;  /* Space between image and name */
-        align-items: center;  /* Center vertically */
-        width: auto;  /* You can adjust this width as needed */
+        justify-content: space-between;  
+        align-items: center;  
+        width: auto;  
         gap: 20px;  
     }
 
@@ -163,7 +170,7 @@ h1 {
         display: grid;
         grid-template-columns: repeat( auto-fit, minmax(250px, 1fr));
         gap: 1rem;
-        margin-top: 1rem;
+        margin: 2rem 0;
       }
 
       .course-item {
@@ -183,3 +190,30 @@ h1 {
       .course-item.completed::after {
         content: " ✅";
       }
+
+      .tab-buttons button {
+        color: white;
+        background-color: var(--primary-color);
+        font-size: 25px;
+        height: 70px;
+        width: 320px;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+     h3 {
+        font-size:30px;
+        margin-bottom: 40px;
+        text-align: center;
+      }
+
+/* Hover effect for buttons in Section 3 */
+.tab-buttons button:hover {
+    background-color: #6a0dad; /* Slightly darker shade of primary color */
+    color: white; /* Change text color */
+    transform: scale(1.05); /* Slight zoom effect */
+    transition: transform 0.2s ease, background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
+
+
