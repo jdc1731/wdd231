@@ -51,6 +51,7 @@
     #nav-menu a {
       display: block;
       padding: 10px;
+      color: black;
     }
   
     /* Style the hamburger button */

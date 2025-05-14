@@ -10,6 +10,13 @@
     font-family: var(--font-family);
 }
 
+.identity {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-left: ;
+}
 
 footer {
      display: flex;
@@ -28,9 +35,9 @@ header {
     min-height: 150px;
     background-color: var(--primary-color);
     color: white;
-    display: flex;              /* Use flex on header */
-    justify-content: center;    /* Center horizontally */
-    align-items: center;        /* Center vertically */
+    display: flex;              
+    justify-content: center;    
+    align-items: center;        
     padding: 10px 0;
 }
 
@@ -43,7 +50,8 @@ main img {
 
 a {
     text-decoration: none;
-    color: white;
+    color: black;
+    font-size: 25px;
     cursor: pointer;
 }
 
@@ -52,20 +60,20 @@ a:hover {
 
 }
 
-/* .header-content {       
+.header-content {       
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px;
     width: 100%;
-    } */
+    }
 
     /* Show hamburger icon */
 .menu-button {
     border: none;
     cursor: pointer;
     display: block;
-    background-color: lightblue;
+    background-color: var(--secondary-color);
     }
   
 
@@ -73,7 +81,7 @@ a:hover {
     display: none;
     flex-direction: column;
     position: absolute;
-    background-color: lightblue;
+    background-color: var(--secondary-color);
     text-align: center;
     padding: 10px 0;
     }
@@ -88,12 +96,15 @@ a:hover {
     padding: 10px 0;
     width: 100%;
     text-align: center;
+    color: black;
     }
 
 nav {
-  width: 1000px;
+  width: 100%;
+  max-width: 1000px;
   margin: 0 auto;
   box-sizing: border-box;
+  
 }
 
 h2 {
@@ -150,7 +161,7 @@ h1 {
 
     .course-grid {
         display: grid;
-        grid-template-columns: 1fr; /* 1 column on small screens */
+        grid-template-columns: repeat( auto-fit, minmax(250px, 1fr));
         gap: 1rem;
         margin-top: 1rem;
       }
