@@ -133,7 +133,7 @@ h1 {
 
 .top {
     display: flex;
-    gap: 1rem;
+    flex-direction: column;
 }
   
  .section1 {
