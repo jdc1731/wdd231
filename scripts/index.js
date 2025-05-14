@@ -11,6 +11,78 @@ document.addEventListener('DOMContentLoaded', () => {
   
     menuButton.addEventListener("click", function () {
       navMenu.classList.toggle("open");
-      menuButton.innerHTML = navMenu.classList.contains("open") ? "&times;" : "&#9776;";
+      // Toggle button icon between ☰ and ✖
+      if (navMenu.classList.contains("open")) {
+        menuButton.innerHTML = "&times;"; // X symbol
+    } else {
+        menuButton.innerHTML = "&#9776;"; 
+    }
     });
 });
+
+const courses = [
+  {
+    courseName: "Introduction to Programming ",
+    courseCode: "CSE 110",
+    completed: true,
+    credits: 2,
+  },
+  {
+    courseName: "Programming with Functions",
+    courseCode: "CSE 111 ",
+    completed: true,
+    credits: 2,
+  },
+  {
+    courseName: "Programming with Classes",
+    courseCode: "CSE 210",
+    completed: false,
+    credits: 2,
+  },
+  {
+    courseName: "Web Fundamentals",
+    courseCode: "WDD 130",
+    completed: true,
+    credits: 2,
+  },
+  {
+    courseName: "Dynamic Web Fundamentals",
+    courseCode: "WDD 131",
+    completed: true,
+    credits: 2,
+  },
+  {
+    courseName: "Web Frontend Development 1",
+    courseCode: "WDD 231",
+    completed: false,
+    credits: 2,
+  },
+];
+
+const filterCourses = (type) => {
+  let filteredCourses;
+
+  if (type === "All") {
+    filteredCourses = courses;
+  } else {
+    filteredCourses = courses.filter(course => course.courseCode.includes(type));
+  }
+
+  const courseList = document.getElementById("course-list");
+  courseList.innerHTML = ""; // Clear previous courses
+
+  filteredCourses.forEach(course => {
+    const courseDiv = document.createElement("div");
+    courseDiv.textContent = course.courseCode;
+    courseDiv.classList.add("course-item");
+
+    if (course.completed) {
+      courseDiv.classList.add("completed");
+    }
+
+    courseList.appendChild(courseDiv);
+  });
+};
+
+
+
