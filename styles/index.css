@@ -134,16 +134,10 @@ h1 {
 .top {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
 }
-  
- .section1 {
-    width: 55%;
- }
-    .section2 {
-        width: 40%;
-        margin-left: auto;
-    }
-  
+ 
   .section3 {
     margin-top: 1rem;
   }
@@ -171,6 +165,7 @@ h1 {
         grid-template-columns: repeat( auto-fit, minmax(250px, 1fr));
         gap: 1rem;
         margin: 2rem 0;
+        
       }
 
       .course-item {
@@ -196,11 +191,20 @@ h1 {
         background-color: var(--primary-color);
         font-size: 25px;
         height: 70px;
-        width: 320px;
-        padding: 10px 20px;
+        width: 300px;
+        padding: 10px;
+        margin: 10px;
         border-radius: 5px;
         cursor: pointer;
       }
+
+    .tab-buttons {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+        margin-bottom: 20px;
+        }
 
      h3 {
         font-size:30px;

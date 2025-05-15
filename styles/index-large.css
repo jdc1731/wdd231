@@ -66,5 +66,23 @@
     #menu-button {
       display: none; 
     }
+
+    .top {
+      flex-direction: row;
+    }
+
+    .section1 {
+      width: 55%;
+   }
+    .section2 {
+      width: 40%;
+      margin-left: auto;
+      }
+
+      .tab-buttons {
+        flex-direction: row;
+       
+    }
+    
   }
   
