@@ -217,7 +217,7 @@ h1 {
     background-color: #6a0dad; 
     color: white; 
     transform: scale(1.05);
-    transition: transform 0.2s ease, background-color 0.3s ease, color 0.3s ease; /
+    transition: transform 0.2s ease, background-color 0.3s ease, color 0.3s ease; 
 }
 
 .section3 p {
