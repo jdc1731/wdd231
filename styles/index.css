@@ -214,10 +214,16 @@ h1 {
 
 /* Hover effect for buttons in Section 3 */
 .tab-buttons button:hover {
-    background-color: #6a0dad; /* Slightly darker shade of primary color */
-    color: white; /* Change text color */
-    transform: scale(1.05); /* Slight zoom effect */
-    transition: transform 0.2s ease, background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+    background-color: #6a0dad; 
+    color: white; 
+    transform: scale(1.05);
+    transition: transform 0.2s ease, background-color 0.3s ease, color 0.3s ease; /
+}
+
+.section3 p {
+    font-size: 25px;
+    margin: 10px 0 30px;
+    text-align: center;
 }
 
 

@@ -31,7 +31,7 @@ const courses = [
     technology: [
       'Python'
     ],
-    completed: false
+    completed: true
   },
   {
     subject: 'WDD',
@@ -44,7 +44,7 @@ const courses = [
       'HTML',
       'CSS'
     ],
-    completed: false
+    completed: true
   },
   {
     subject: 'CSE',
@@ -56,7 +56,7 @@ const courses = [
     technology: [
       'Python'
     ],
-    completed: false
+    completed: true
   },
   {
     subject: 'CSE',
@@ -82,7 +82,7 @@ const courses = [
       'CSS',
       'JavaScript'
     ],
-    completed: false
+    completed: true
   },
   {
     subject: 'WDD',
@@ -101,14 +101,6 @@ const courses = [
 ];
 
 
-const calculateCreditsCompleted = () => {
-  const completedCredits = courses
-    .filter(course => course.completed)
-    .reduce((total, course) => total + course.credits, 0);
-
-  const creditsCountElement = document.getElementById("credits-count");
-  creditsCountElement.textContent = completedCredits;
-};
 
 const filterCourses = (type) => {
   let filteredCourses;
@@ -134,12 +126,14 @@ const filterCourses = (type) => {
     courseList.appendChild(courseDiv);
   });
 
-  // Update the credits completed counter
-  calculateCreditsCompleted();
+  const totalCredits = filteredCourses.reduce((sum, course) => sum + course.credits, 0);
+  const creditsDisplay = document.getElementById("totalCredits");
+  if (creditsDisplay) {
+    creditsDisplay.textContent = totalCredits;
+  }
 };
 
-// Call the function initially to display the credits on page load
-calculateCreditsCompleted();
+
 
 
 
