@@ -1,0 +1,49 @@
+{
+    "family_name": "Keil",
+    "move_in_date": "09-15-2010",
+    "number_of_people": 8,
+    "visited_by_bishopric": true,
+    "family_members": [
+      {
+        "name": "Dane Keil",
+        "gender": "Male",
+        "birthdate": "08-08-1983"
+      },
+      {
+        "name": "Joyce Keil",
+        "gender": "Female",
+        "birthdate": "05-23-1984"
+      },
+      {
+        "name": "Ireland Keil",
+        "gender": "Female",
+        "birthdate": "06-05-2008"
+      },
+      {
+        "name": "Taevon Keil",
+        "gender": "Male",
+        "birthdate": "03-03-2011"
+      },
+      {
+        "name": "Thoryn Keil",
+        "gender": "Male",
+        "birthdate": "05-04-2015"
+      },
+      {
+        "name": "Valynda Keil",
+        "gender": "Female",
+        "birthdate": "03-19-2011"
+      },
+      {
+        "name": "Kalodin Keil",
+        "gender": "Male",
+        "birthdate": "03-13-2020"
+      },
+      {
+        "name": "Lockelan Keil",
+        "gender": "Female",
+        "birthdate": "08-28-2021"
+      }
+
+    ]
+  }
