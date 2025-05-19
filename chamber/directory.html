@@ -11,7 +11,7 @@
 <meta property="og:description" content="This webpage is the chamber of commerce for Helper Utah.">
 <meta property="og:url" content="https://jdc1731.github.io/wdd231/">
     <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/directory-large.css">
+    <link rel="stylesheet" href="styles/large-directory.css">
     <link rel="stylesheet" href="styles/directory.css">
     <script src="scripts/directory.js" defer></script>
     <link rel="icon" href="data:,">
@@ -29,20 +29,28 @@
             <h1>Helper Utah</h1>
             <p>Chamber of Commerce</p>
         </div>
-      </header>
         <nav>
             <button id="myButton">&#9776;</button>
             <ul class="menuLinks">
               <li><a href="../index.html" id="home">Home</a></li>
-              <li><a href="directory.html" id="directory">Directory</a></li>  
+              <li class="currentMenuItem"><a href="directory.html" id="directory">Directory</a></li>  
               <li><a href="join.html" id="join">Join</a></li>
               <li><a href="discover.html" id="discover">Discover</a></li>
             </ul>
-           
-            
-            
         </nav>
+      </header>
+       
     <main>
-        <h1>Chamber of Commerce</h1>
-
-        <div class="top">
+        <h1>Directory</h1>
+        <div class="view-toggle">
+            <button id="grid-view">Grid View</button>
+            <button id="list-view">List View</button>
+          </div>
+          
+          <div id="members" class="grid"></div>
+    </main>
+    <footer class="footer-content"><p>&copy; <span id="current-year"></span> &#9822;Joyce Keil | Utah &#9822;</p>
+        <p id="last-modified"></p><span>&#9822;</span>
+</footer>
+</body>
+</html>

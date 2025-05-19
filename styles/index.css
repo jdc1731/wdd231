@@ -92,13 +92,22 @@ a {
 
 
 #nav-menu a {
+    display: block;
     padding: 10px 0;
     width: 100%;
     text-align: center;
     color: black;
     background-color: var(--secondary-color);
     height: 70px;
-    }
+    text-decoration: none;
+    transition: background 0.2s;
+}
+
+#nav-menu a.currentMenuItem {
+    background-color: white;
+    color: var(--primary-color);
+    border-radius: 5px;
+}
 
 #nav-menu a:hover {
     background-color: darkgrey;
@@ -224,6 +233,11 @@ h1 {
     font-size: 25px;
     margin: 10px 0 30px;
     text-align: center;
+}
+
+.currentMenuItem {
+    background-color: white;
+    
 }
 
 

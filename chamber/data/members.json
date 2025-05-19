@@ -1,0 +1,67 @@
+{
+"members": [
+  {
+    "name": "Life Happens Counseling",
+    "address": "123 Main St, Helper, UT 84526",
+    "phone": "435-650-1859",
+    "website": "https://tinyurl.com/2p9rkmbe",
+    "image": "images/lifehappens.webp",
+    "services": "Counseling, Therapy",
+    "membershipLevel": "Gold"
+  },
+  {
+    "name": "Don Marcos",
+    "address": "60 W Main St, Helper, Ut 84526",
+    "phone": "435-637-6302",
+    "website": "https://www.facebook.com/NailStylistMelissaMontoya/",
+    "image": "images/donmarcos.webp",
+    "services": "Nail Salon, Hair Salon",
+    "membershipLevel": "Member"
+  },
+  {
+    "name": "Happiness Within",
+    "address": "153 S Main St, Helper, Ut 84526",
+    "phone": "435-472-2326",
+    "website": "https://www.facebook.com/profile.php?id=100063576312713#",
+    "image": "images/happiness.webp",
+    "services": "Coffee Shop",
+    "membershipLevel": "Silver"
+  },
+  {
+    "name": "The Little Rock Shop",
+    "address": "520 N Main St, Helper, UT 84526",
+    "phone": "435-472-4438",
+    "website": "None",
+    "image": "images/rockshop.webp",
+    "services": "Rock Shop, Jewelry, Gifts",
+    "membershipLevel": "Member"
+  },
+  {
+    "name": "Bug + Bird Mercantile",
+    "address": "52 South Main Street, Helper, UT 84526",
+    "phone": "(480) 216-0889",
+    "website": "https://www.facebook.com/bugandbirdmercantile/",
+    "image": "images/bugbird.webp",
+    "services": "Shopping, Gifts",
+    "membershipLevel": "Silver"
+  },
+  {
+    "name": "Helper Beer",
+    "address": "159 N MAIN ST HELPER, UT 84526",
+    "phone": "435-472-BEER",
+    "website": "https://www.helperbeer.com/",
+    "image": "images/helperbeer.webp",
+    "services": "Distillery, Beer, Restaurant",
+    "membershipLevel": "Gold"
+  },
+  {
+    "name": "Canvas Alchemy",
+    "address": "160 S Main St, Helper, UT 84526",
+    "phone": "435-472-0750",
+    "website": "https://www.canvasalchemy.org/",
+    "image": "images/canvas.webp",
+    "services": "Art Gallery, Art Classes",
+    "membershipLevel": "Gold"
+  }
+]
+}
