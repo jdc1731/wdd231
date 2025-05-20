@@ -25,6 +25,32 @@
    #myButton {
       display: none;
    }
+
+   .view-toggle {
+      display: flex;
+      justify-content: center;
+      margin: 1rem 0;
+      height: 40px;
+      gap: 1rem;
+    }
+  
+    .view-toggle button {
+      width: 120px;         
+      padding: 0.5rem 1rem;  
+      font-size: 20px;
+      border: none;
+      border-radius: 6px;
+      background-color: var(--secondary-color);
+      color: #333;
+      cursor: pointer;
+      
+    }
+    
+    .view-toggle button:hover {
+      background-color: var(--primary-color);
+      color: #fff;
+    }
+  
     ul li {
       background-color:var(--primary-color);
   }

@@ -99,6 +99,7 @@ ul.menuLinks.open {
   .card {
     border: 1px solid #ccc;
     padding: 1rem;
+
     border-radius: 0.5rem;
     background-color: #f9f9f9;
     text-align: center;
@@ -123,7 +124,7 @@ ul.menuLinks.open {
     justify-content: center;
     align-items: center;
   }
-  
+
 footer {
     display: flex;
    justify-content: center; 
