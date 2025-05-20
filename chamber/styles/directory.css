@@ -38,7 +38,7 @@ h1 {
     background: none;
     border: none;
     color: black;
-    background-color: avar(--primary-color);
+    background-color: var(--primary-color);
     cursor: pointer;
     width:100%;
     text-align: right;
