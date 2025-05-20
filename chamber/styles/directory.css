@@ -20,7 +20,7 @@
 header {
     display: flex;
     align-items: center;
-    justify-content: space-between; /* Ensures right alignment */
+    justify-content: space-between; 
     background-color: var(--primary-color);
     height: 80px;
     width: 100%;
@@ -33,6 +33,7 @@ h1 {
 .header-text {
     margin-left: 15px;
 }
+
 /* Hamburger icon styles */
 #myButton {
     font-size: 30px;
@@ -140,12 +141,12 @@ main h1 {
   
   #members.list {
     display: block;
+    margin-bottom: 20px;
   }
   
   .card {
     border: 1px solid #ccc;
     padding: 1rem;
-
     border-radius: 0.5rem;
     background-color: #f9f9f9;
     text-align: center;
