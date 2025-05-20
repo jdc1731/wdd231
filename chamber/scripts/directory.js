@@ -7,12 +7,19 @@ document.addEventListener('DOMContentLoaded', () => {
     
 const hamburgerElement = document.querySelector('#myButton');
 const navMenu = document.querySelector('.menuLinks');
-const header = document.querySelector('header');
+// const header = document.querySelector('header');
 hamburgerElement.addEventListener('click', () => {
     navMenu.classList.toggle('open');
     hamburgerElement.classList.toggle('open');
-    header.style.display = 'flex';
-    header.style.flexDirection = 'column';
+    // header.style.display = 'flex';
+    // header.style.flexDirection = 'column';
+});
+
+window.addEventListener('resize', () => {
+    if (window.innerWidth >= 500) {
+        navMenu.classList.remove('open');
+        hamburgerElement.classList.remove('open');
+    }
 });
 });
 

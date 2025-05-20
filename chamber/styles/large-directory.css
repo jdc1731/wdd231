@@ -1,4 +1,4 @@
-@media only screen and (min-width: 670px) {
+@media only screen and (min-width: 500px) {
    :root {
       --primary-color: #839788;
       --secondary-color: #BDBBB6;
@@ -20,6 +20,11 @@
     justify-content: flex-end;
    gap: 2rem;
    background-color: var(--primary-color);
+   }
+
+   ul.menuLinks {
+      width: 100%;
+      margin-right: -300px;
    }
   
    #myButton {
