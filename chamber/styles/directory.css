@@ -40,12 +40,12 @@ h1 {
     color: black;
     background-color: var(--primary-color);
     cursor: pointer;
-    width:100%;
+    width:auto;
     text-align: right;
     padding: .25rem 2vw;
     position: relative;
     z-index: 1001; 
-    left: 80px;
+    left: 120px;
 }
 
 /* Hide the hamburger icon, show X instead */
@@ -100,7 +100,6 @@ ul.menuLinks.open {
 .menuLinks.open {
     position: absolute;
     top: 70px; 
-    left: 0;
     width: 100%;
     z-index: 1000;
 }
