@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const currentYear = new Date().getFullYear();
     document.querySelector('#current-year').textContent = `${currentYear}`;
     const lastModifiedDate = document.lastModified;
-    document.querySelector('#last-modified').textContent = `Date Last Modified ${lastModifiedDate}`;
+    document.querySelector('#last-modified').textContent =  `${lastModifiedDate}`;
     
 const hamburgerElement = document.querySelector('#myButton');
 const navMenu = document.querySelector('.menuLinks');
@@ -13,13 +13,6 @@ hamburgerElement.addEventListener('click', () => {
     hamburgerElement.classList.toggle('open');
     // header.style.display = 'flex';
     // header.style.flexDirection = 'column';
-});
-
-window.addEventListener('resize', () => {
-    if (window.innerWidth >= 500) {
-        navMenu.classList.remove('open');
-        hamburgerElement.classList.remove('open');
-    }
 });
 });
 

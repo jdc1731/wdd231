@@ -1,4 +1,4 @@
-@media only screen and (min-width: 500px) {
+@media only screen and (min-width: 690px) {
    :root {
       --primary-color: #839788;
       --secondary-color: #BDBBB6;
@@ -24,7 +24,7 @@
 
    ul.menuLinks {
       width: 100%;
-      margin-right: -300px;
+      
    }
   
    #myButton {
@@ -122,4 +122,5 @@
 }
 
 }
+
 

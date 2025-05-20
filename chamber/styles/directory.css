@@ -82,6 +82,7 @@ ul a {
     background-color: var(--secondary-color);
     text-decoration: none;
     text-align: center;
+    width: 100%;
 }
 
 /* Hide menu by default */
@@ -182,6 +183,7 @@ footer {
     align-items: center;
     text-align: center;
 }
+
 .footer-left,
 .footer-center,
 .footer-right {
