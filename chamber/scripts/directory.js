@@ -7,10 +7,12 @@ document.addEventListener('DOMContentLoaded', () => {
     
 const hamburgerElement = document.querySelector('#myButton');
 const navMenu = document.querySelector('.menuLinks');
-
+const header = document.querySelector('header');
 hamburgerElement.addEventListener('click', () => {
     navMenu.classList.toggle('open');
     hamburgerElement.classList.toggle('open');
+    header.style.display = 'flex';
+    header.style.flexDirection = 'column';
 });
 });
 

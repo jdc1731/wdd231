@@ -66,10 +66,6 @@ ul a {
     text-decoration: none;
     text-align: center;
 }
- .menuLinks li:hover {
-    background-color: rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
- }
 
 /* Hide menu by default */
 .menuLinks {
@@ -78,12 +74,23 @@ ul a {
 
 ul.menuLinks.open {
     display: block;
+    margin-top: 205px;
+    left: 0;
+    width: 100%;
 }
 
 #myButton.open::before {
     content: "X";
     font-size: 30px;
     color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    width: 350px;
 }
 
 /* main section */

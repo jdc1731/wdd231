@@ -1,4 +1,4 @@
-@media only screen and (min-width: 500px) {
+@media only screen and (min-width: 670px) {
    :root {
       --primary-color: #839788;
       --secondary-color: #BDBBB6;
@@ -48,12 +48,18 @@
     
     .view-toggle button:hover {
       background-color: var(--primary-color);
-      color: #fff;
+      color: black;
+      
     }
   
     ul li {
       background-color:var(--primary-color);
   }
+
+  .menuLinks li:hover {
+   background-color: rgba(0, 0, 0, 0.1);
+   border-radius: 5px;
+}
 
   footer {
    display: flex;
