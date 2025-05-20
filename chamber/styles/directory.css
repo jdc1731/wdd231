@@ -83,6 +83,12 @@ ul.menuLinks.open {
 }
 
 /* main section */
+main h1 {
+    font-size: 2rem;
+    border-bottom: solid 2px var(--primary-color);
+    padding: 20px 0;
+    text-align: center;
+}
 
 /* member list  */
 
@@ -129,11 +135,23 @@ footer {
     display: flex;
    justify-content: center; 
    align-items: center;
-   height: 50px;
    width: 100%;
-   height: 60px;
+   height: 220px;
    background-color: var(--primary-color);
    color: white;
    
 }
+
+.footer-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.footer-left,
+.footer-center,
+.footer-right {
+    align-items: center;
+    min-width: unset;
+    }
+
 
