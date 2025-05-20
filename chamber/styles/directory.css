@@ -78,7 +78,8 @@ ul a {
 .menuLinks li {
     display: block;
     padding: 0.75rem 2vw;
-    color: #fff;
+    color:black;
+    background-color: var(--secondary-color);
     text-decoration: none;
     text-align: center;
 }
