@@ -66,6 +66,10 @@ ul a {
     text-decoration: none;
     text-align: center;
 }
+ .menuLinks li:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+ }
 
 /* Hide menu by default */
 .menuLinks {
