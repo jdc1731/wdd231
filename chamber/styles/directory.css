@@ -51,21 +51,6 @@ h1 {
     /* Remove left: 120px; or any left: ... */
 }
 
-/* Hide the hamburger icon, show X instead */
-#myButton.open::before {
-    content: "X";
-    font-size: 30px;
-    color: black;
-    position: absolute;
-    right: 2vw;
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-#myButton.open {
-    color: transparent; /* Hide the original hamburger icon */
-}
-
 li.currentMenuItem {
     background-color: rgba(0, 0, 0, 0.1);
     border-radius: 5px;
@@ -94,11 +79,23 @@ ul a {
 }
 
 ul.menuLinks.open {
+    position: absolute;
     display: block;
-    margin-top: 10px;
-    left: 0;
-    width: 100%;
+    top: 50px; 
+    right: 0;
+    width: 200px;
+    z-index: 100;
 }
+
+nav {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    width: 350px;
+}
+
 
 /*  Make sure the button stays on top of the menu */
 .menuLinks.open {

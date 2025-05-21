@@ -6,13 +6,25 @@ document.addEventListener('DOMContentLoaded', () => {
     document.querySelector('#last-modified').textContent =  `${lastModifiedDate}`;
     
 const hamburgerElement = document.querySelector('#myButton');
-const navMenu = document.querySelector('.menuLinks');
-// const header = document.querySelector('header');
+    const navMenu = document.querySelector('.menuLinks');
+    const header = document.querySelector('header');
+    const menuIcon = document.querySelector('#menu-icon');
 hamburgerElement.addEventListener('click', () => {
     navMenu.classList.toggle('open');
     hamburgerElement.classList.toggle('open');
-    // header.style.display = 'flex';
-    // header.style.flexDirection = 'column';
+    menuIcon.textContent = hamburgerElement.classList.contains('open')
+        ? 'X'
+        : '☰';
+    
+});
+
+window.addEventListener('resize', () => {
+    if (window.innerWidth >= 690) {
+        navMenu.classList.remove('open');
+        hamburgerElement.classList.remove('open');
+        // Optional: reset menu icon if you use it
+        if (menuIcon) menuIcon.textContent = '☰';
+    }
 });
 });
 
