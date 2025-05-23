@@ -5,28 +5,30 @@ document.addEventListener('DOMContentLoaded', () => {
     const lastModifiedDate = document.lastModified;
     document.querySelector('#last-modified').textContent =  `${lastModifiedDate}`;
     
-const hamburgerElement = document.querySelector('#myButton');
+    const hamburgerElement = document.querySelector('#myButton');
     const navMenu = document.querySelector('.menuLinks');
-    const header = document.querySelector('header');
-    const menuIcon = document.querySelector('#menu-icon');
-hamburgerElement.addEventListener('click', () => {
-    navMenu.classList.toggle('open');
-    hamburgerElement.classList.toggle('open');
-    menuIcon.textContent = hamburgerElement.classList.contains('open')
-        ? 'X'
-        : '☰';
+    
+    hamburgerElement.addEventListener('click', () => {
+        navMenu.classList.toggle('open');
+        hamburgerElement.classList.toggle('open');
+        hamburgerElement.textContent = hamburgerElement.classList.contains('open')
+            ? 'X'
+            : '☰';
+    });
     
 });
 
 window.addEventListener('resize', () => {
-    if (window.innerWidth >= 690) {
+    const hamburgerElement = document.querySelector("#myButton");
+    const navMenu = document.querySelector(".menuLinks");
+
+    if (window.innerWidth >= 700) {
         navMenu.classList.remove('open');
         hamburgerElement.classList.remove('open');
-        // Optional: reset menu icon if you use it
-        if (menuIcon) menuIcon.textContent = '☰';
+        hamburgerElement.textContent = "☰";
     }
 });
-});
+
 
 
 const url = 'data/members.json';

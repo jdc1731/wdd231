@@ -15,7 +15,7 @@
    max-width: 1000px;
    margin: 0 auto;
  }
-   ul.menuLinks, ul.menuLinks.open  {
+   ul.menuLinks  {
     display: flex;
     justify-content: flex-end;
    gap: 2rem;
@@ -23,13 +23,25 @@
    }
 
    ul.menuLinks {
-      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+      gap: 1rem;
+      background-color: var(--primary-color);
       
    }
   
    #myButton {
       display: none;
    }
+
+   nav {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 70px;
+      width: 350px;
+  }
 
    .view-toggle {
       display: flex;
@@ -63,6 +75,7 @@
 
   .menuLinks li {
    background-color: var(--primary-color);
+   font-size: 18px;
   }
 
   .menuLinks li:hover {
