@@ -49,7 +49,6 @@ h1 {
     position: relative;
     z-index: 1001;
     margin-left: auto;   /* Pushes button to the right */
-    /* Remove left: 120px; or any left: ... */
 }
 
 li.currentMenuItem {
@@ -120,6 +119,16 @@ main h1 {
     border-bottom: solid 2px var(--primary-color);
     padding: 20px 0;
     text-align: center;
+}
+
+#members.list img {
+    display: none;
+}
+
+#members.list {
+    display: block;
+    margin: 0 auto;
+    max-width: 400px;
 }
 
 /* member list  */
