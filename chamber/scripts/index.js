@@ -1,12 +1,11 @@
 import { updateFooterDates, setupHamburgerMenu } from "./header-footer.js";
+import { getEvents } from "./current-events.js";
+import { fetchWeather} from "./weather.js";
 
 document.addEventListener("DOMContentLoaded", () => {
   updateFooterDates();
   setupHamburgerMenu();
-});
-
-import { getMembers } from "./members.js";
-
-document.addEventListener("DOMContentLoaded", () => {
-  getMembers();
+  getEvents();
+    fetchWeather();
+    
 });
