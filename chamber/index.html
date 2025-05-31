@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/directory.css">
     <link rel="stylesheet" href="styles/large-directory.css">
+    <link rel="stylesheet" href="styles/index.css">
     <script src="scripts/directory.js" defer></script>
     <link rel="icon" href="data:,">
    <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -34,8 +35,8 @@
         <nav>
             <button id="myButton">&#9776;</button>
             <ul class="menuLinks">
-                <li><a href="index.html" id="home">Home</a></li>
-              <li class="currentMenuItem"><a href="directory.html" id="directory">Directory</a></li>
+                <li class="currentMenuItem"><a href="index.html" id="home">Home</a></li>
+              <li ><a href="directory.html" id="directory">Directory</a></li>
               <li><a href="#" id="join">Join</a></li>
               <li><a href="#" id="discover">Discover</a></li>
             
@@ -44,13 +45,35 @@
       </header>
        
     <main>
-        <h1>Directory</h1>
-        <div class="view-toggle">
-            <button id="grid-view">Grid View</button>
-            <button id="list-view">List View</button>
+        <h1>Home</h1>
+        <div class="hero">
+            <img class="hero_img" src="images/train_hero.webp" alt="Helper Utah Train">
+            
+          <div class="cta">
+            <h2>Join the Chamber of Commerce</h2>
+            <p>Become a member today and enjoy the benefits of being part of the Helper Utah business community.</p>
+            <a href="join.html">
+            <button id="join-button">Join Now</button>
+            </a>
           </div>
-          
-          <div id="members" class="grid"></div>
+        </div>
+        <h2 class="events">Upcoming Events</h2>
+        <section class="current-events">
+          <ul>
+            <li>
+              <h3>Helper Arts Festival</h3>
+              <p>Date: September 15-17, 2025</p>
+              <p>Location: Downtown Helper</p>
+              <p>Description: Celebrate local art and culture with live music, food, and art exhibits.</p>
+            </li>
+            <li>
+              <h3>Chamber Networking Event</h3>
+              <p>Date: October 5, 2025</p>
+              <p>Location: Helper Community Center</p>
+              <p>Description: Connect with local business owners and professionals.</p>
+            </li>
+          </ul>
+        </section>
     </main>
     <footer class="footer-content">
   <div class="footer-left">
