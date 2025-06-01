@@ -83,7 +83,8 @@ ul a {
 ul.menuLinks.open {
     display: block;
     position: absolute;
-    top: 50px; 
+    top: 75px; 
+    background-color: lightgray;
     right: 0;
     width: 250px;
     z-index: 100;

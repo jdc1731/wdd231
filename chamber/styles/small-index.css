@@ -1,5 +1,17 @@
 @media (max-width: 600px) {
-    /* Stack weather sections vertically */
+  :root {
+    --primary-color: #839788;
+    --secondary-color: #BDBBB6;
+    --font-family: 'Roboto', sans-serif;
+}
+ 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-family);
+}
+/* Stack weather sections vertically */
     #weather-wrapper {
         grid-template-columns: 1fr; 
         gap: 1rem;              
