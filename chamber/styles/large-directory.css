@@ -130,8 +130,8 @@
 }
 
 .footer-center a:hover {
-   color: var(--secondary-color);
-   text-decoration: underline;
+   color: white;
+   text-decoration: none;
 }
 
 }
