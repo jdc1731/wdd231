@@ -38,3 +38,43 @@ function displayWeather(data) {
 
 // ✅ Export only the current weather function
 export { fetchWeather };
+
+async function getMembers() {
+  try {
+    const response = await fetch("data/members.json");
+    if (!response.ok) throw new Error("Failed to fetch members");
+    const data = await response.json();
+    return data.members;
+  } catch (error) {
+    console.error("Error loading members:", error);
+    return [];
+  }
+}
+
+// Randomly select 3 members and display them
+async function displaySpotlights() {
+  const allMembers = await getMembers();
+
+  // Optionally filter for spotlight-eligible members (e.g., "gold" or "silver" tiers)
+  // const spotlightEligible = allMembers.filter(m => m.membership === "gold" || m.membership === "silver");
+
+  const randomMembers = allMembers.sort(() => 0.5 - Math.random()).slice(0, 3);
+  const container = document.querySelector(".spotlight-container");
+  container.innerHTML = "";
+
+  randomMembers.forEach((member) => {
+    const card = document.createElement("div");
+    card.classList.add("spotlight-card");
+
+    card.innerHTML = `
+      <img src="${member.image}" alt="${member.name}">
+      <h3>${member.name}</h3>
+      <p>${member.description}</p>
+      <a href="${member.website}" target="_blank">Visit Website</a>
+    `;
+
+    container.appendChild(card);
+  });
+}
+
+export { displaySpotlights };

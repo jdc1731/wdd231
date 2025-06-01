@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="styles/directory.css">
     <link rel="stylesheet" href="styles/large-directory.css">
     <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/small-index.css">
     <script type="module" src="scripts/index.js"></script>
     <link rel="icon" href="data:,">
    <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -57,16 +58,16 @@
             </a>
           </div>
         </div>
-        <div class="section-h2">
-        <h2 >Upcoming Events</h2>
+        <div>
+        <h2 class="section-h2" >Upcoming Events</h2>
     </div>
     <section id="events"></section>
-    <h2>Weather</h2>    
+    <h2 class="section-h2">Weather</h2>    
 <section id="weather-wrapper">
     
   <!-- Current Weather -->
   <div id="weather-current">
-    <h3 class="section-h2">Current Weather</h3>
+    <h3>Current Weather</h3>
     <p>The current temperature in Helper, Utah is <span id="current-temp"></span></p>
     <figure>
       <img id="weather-icon" src="" alt="">
@@ -97,7 +98,11 @@
     </div>
   </div>
 </section>
-
+<section id="spotlights">
+    <h2 class="section-h2">Member Spotlights</h2>
+    <div class="spotlight-container"></div>
+  </section>
+  
 
     </main>
     <footer class="footer-content">
