@@ -151,6 +151,13 @@
     
   }
 
+  #forecast img {
+    aspect-ratio: 1 / 1; /* forces square shape */
+    height: auto;
+    width: 50px;
+  }
+  
+
   /* member spotlight */
 
   #spotlights {
