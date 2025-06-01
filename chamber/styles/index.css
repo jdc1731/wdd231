@@ -46,15 +46,19 @@
     border-radius: 5px;
 }
 
-.cta button {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: var(--secondary-color);
-    color: black;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-    margin-top: 10px ;
+#join-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: var(--secondary-color);
+  color: black;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+}
+#join-button:hover {
+  background-color: #aaa; 
 }
 
 /* current events */
@@ -95,7 +99,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: top;
+    justify-content: start;
 
   }
   
@@ -146,7 +150,7 @@
     
   }
 
-  /* membr spotlight */
+  /* member spotlight */
 
   #spotlights {
     margin: 2rem 0;
