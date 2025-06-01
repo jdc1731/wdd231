@@ -18,11 +18,11 @@ function displayMembers(members) {
     const card = document.createElement("section");
     card.classList.add("card");
     card.innerHTML = `
-            <h2>${member.name}</h2>
-            <p>${member.phone}</p>
-            <p>${member.address}</p>
-            <a href="${member.website}" target="_blank">Website</a>
-            <img src="${member.image}" alt="${member.name}">
+        <h2>${member.name}</h2>
+        <p>${member.phone}</p>
+        <p>${member.address}</p>
+        <a href="${member.website}" target="_blank">Website</a>
+        <img src="${member.image}" alt="${member.name}">
         `;
     cardsContainer.appendChild(card);
   });
@@ -30,45 +30,44 @@ function displayMembers(members) {
 
 // Function to randomly spotlight 3 members
 async function displaySpotlights() {
-    console.log("displaySpotlights called");
-    try {
-      const response = await fetch("data/members.json");
-      const data = await response.json();
-      const members = data.members;
-  
-      // Filter for Gold or Silver members
-      const qualified = members.filter(member =>
+  console.log("displaySpotlights called");
+  try {
+    const response = await fetch("data/members.json");
+    const data = await response.json();
+    const members = data.members;
+
+    // Filter for Gold or Silver members
+    const qualified = members.filter(
+      (member) =>
         member.membershipLevel === "Gold" || member.membershipLevel === "Silver"
-      );
-  
-      // Shuffle the array
-      const shuffled = qualified.sort(() => 0.5 - Math.random());
-  
-      // Get 3 random members
-      const selected = shuffled.slice(0, 3);
-  
-      // Select the container
-      const container = document.querySelector(".spotlight-container");
-      container.innerHTML = ""; // clear existing content
-  
-      selected.forEach(member => {
-        const card = document.createElement("div");
-        card.classList.add("spotlight-card");
-        card.innerHTML = `
+    );
+
+    // Shuffle the array
+    const shuffled = qualified.sort(() => 0.5 - Math.random());
+
+    // Get 3 random members
+    const selected = shuffled.slice(0, 3);
+
+    // Select the container
+    const container = document.querySelector(".spotlight-container");
+    container.innerHTML = ""; // clear existing content
+
+    selected.forEach((member) => {
+      const card = document.createElement("div");
+      card.classList.add("spotlight-card");
+      card.innerHTML = `
           <h3>${member.name}</h3>
           <img src="${member.image}" alt="${member.name}">
           <p>${member.services}</p>
           <a href="${member.website}" target="_blank">Visit Website</a>
         `;
-        container.appendChild(card);
-      });
-    } catch (error) {
-      console.error("Error loading spotlights:", error);
-    }
+      container.appendChild(card);
+    });
+  } catch (error) {
+    console.error("Error loading spotlights:", error);
   }
-  
-  
-  
+}
+
 // Only add event listeners if the buttons exist (i.e., on the directory page)
 if (gridButton && listButton && cardsContainer) {
   gridButton.addEventListener("click", () => {
