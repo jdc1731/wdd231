@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Joyce Keil">
+    <meta name="description" content="WDD231- Web Frontend Development - Joyce Keil - Chamber of Commerce Page">
+    <meta property="og:title" content="WDD 231-Web Frontend Development - Chamber of Commerce Join Page">
+    <meta property="og:image" content="https://jdc1731.github.io/wdd231/chamber/images/utah.webp">
+
+<meta property="og:description" content="This webpage is the chamber of commerce for Helper Utah.">
+<meta property="og:url" content="https://jdc1731.github.io/wdd231/">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/directory.css">
+    <link rel="stylesheet" href="styles/large-directory.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/small-index.css">
+    <link rel="stylesheet" href="styles/join.css">
+    <script type="module" src="scripts/join.js"></script>
+    <link rel="icon" href="data:,">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="icon" type="image/x-ico" sizes="16x16" href="images/favicon.ico">
+<title> Helper Utah Chamber of Commerce Join Page </title>
+
+</head>
+<body>
+    <header>
+        <div class="logo">
+        <img src="../images/utah.webp" alt="Helper Utah" class="headerImage">
+        <div class="header-text">
+            <h2>Helper Utah</h2>
+            <p>Chamber of Commerce</p>
+        </div>
+    </div>
+        <nav>
+            <button id="myButton">&#9776;</button>
+            <ul class="menuLinks">
+                <li ><a href="index.html" id="home">Home</a></li>
+              <li ><a href="directory.html" id="directory">Directory</a></li>
+              <li class="currentMenuItem"><a href="join.html" id="join">Join</a></li>
+              <li><a href="#" id="discover">Discover</a></li>
+            
+            </ul>
+        </nav>
+      </header>
+       
+    <main>
+       <form action="thankyou.html" method="get">
+        <label for="firstname">First Name:</label>
+        <input type="text" id="firstname" name="firstname" title="First Name" required autocomplete="given-name">
+        <label for="lastname">Last Name:</label>
+        <input type="text" id="lastname" name="lastname" title="Last Name" required autocomplete="family-name">
+        <label for="organization">Organization Title:</label>
+        <input type="text" id="organization-title" name="organization-title" required autocomplete="organization-title"
+        title="Organization Title" 
+        pattern="[A-Za-z0-9\s]{1,50}">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required autocomplete="email" title="Email Address" placeholder="youremail@gmail.com">
+        <label for="phone">Phone Number:</label>
+        <input type="text" id="phone" name="phone" required autocomplete="tel" title="Phone Number">
+        <label for="business-name">Business/Organization Name:</label>
+        <input type="text" id="business-name" name="business-name" required autocomplete="organization" title="Business Name">
+        <fieldset>
+            <legend>Select Your Membership Level</legend>
+            <label>
+              <input type="radio" name="membershipLevel" value="np" class="membership-option" required>
+              Non-Profit
+              <button type="button" class="info-btn" data-id="np" aria-label="More info about Non-Profit">?</button>
+            </label><br>
+            <label>
+              <input type="radio" name="membershipLevel" value="bronze" class="membership-option">
+              Bronze
+              <button type="button" class="info-btn" data-id="bronze" aria-label="More info about Bronze">?</button>
+            </label><br>
+            <label>
+              <input type="radio" name="membershipLevel" value="silver" class="membership-option">
+              Silver
+              <button type="button" class="info-btn" data-id="silver" aria-label="More info about Silver">?</button>
+            </label><br>
+            <label>
+              <input type="radio" name="membershipLevel" value="gold" class="membership-option">
+              Gold
+              <button type="button" class="info-btn" data-id="gold" aria-label="More info about Gold">?</button>
+            </label>
+          </fieldset> 
+          <div class="membership-cards" id="membershipCardsContainer">
+    
+          </div>
+          
+        <label for="description">Business/Organization description</label>    
+        <textarea id="description" name="description" rows="4" cols="50" required ></textarea>  
+        <input type="hidden" name="timestamp" id="timestamp">   
+        <button type="submit" id="submit-button">Join Now</button>     
+        </form>
+        <dialog id="membershipModal">
+            <button id="closeModal" aria-label="Close modal">×</button>
+            <h2 id="modalTitle"></h2>
+            <p id="modalDescription"></p>
+            <p><strong>Benefits:</strong> <span id="modalBenefits"></span></p>
+            <p><strong>Cost:</strong> <span id="modalCost"></span></p>
+          </dialog>
+          
+          
+          
+    </main>
+    <footer class="footer-content">
+  <div class="footer-left">
+    <p>Helper Utah Chamber of Commerce</p>
+    <p>222 Main Street</p>
+    <p>Helper, Utah 84526</p>
+    <p>info@helpercc.org</p>
+    <p>(569)555-2236</p>
+  </div>
+  <div class="footer-center">
+    <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a>
+    <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a>
+    <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+  </div>
+  <div class="footer-right">
+    <p>
+    <span id="current-year"></span> &#9822; | Joyce Keil
+    </p>
+    <p>WDD231 Class Project</p>
+    <p>Date Last Modified</p>
+    <p id="last-modified"></p>
+</div> 
+</footer>
+</body>
+</html>

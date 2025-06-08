@@ -1,0 +1,30 @@
+[
+    {
+        "id": "np",
+        "name": "Non-Profit",
+        "description": "Organizations that operate for charitable, educational, or community service purposes.",
+        "benefits":"Community support,networking opportunities, access to grants and funding",
+        "cost": "$0.00"
+    },
+    {
+        "id": "bronze",
+        "name": "Bronze",   
+        "description": "Basic membership level for small businesses and individuals.",
+        "benefits": "Basic listing in the chamber directory, access to member events, and newsletters.",
+        "cost": "$50.00 per year" 
+    },
+    {
+        "id": "silver",
+        "name": "Silver",
+        "description": "Enhanced membership level with additional benefits.",
+        "benefits": "All Bronze benefits, plus promotional opportunities and access to exclusive events.",
+        "cost": "$100.00 per year"
+    },
+    {
+        "id": "gold",
+        "name": "Gold",
+        "description": "Premium membership level for established businesses.",
+        "benefits": "All Silver benefits, plus priority listing in the directory, featured promotions, and networking events.",
+        "cost": "$150.00 per year"
+    }  
+]
