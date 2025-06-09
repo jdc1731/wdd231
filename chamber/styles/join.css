@@ -49,7 +49,7 @@
   @keyframes bgColorCycle {
     0% { background-color: #0077cc; color: white; }
     25% { background-color: #009688; color: white; }
-    50% { background-color: #4CAF50; color: white; }
+    50% { background-color: #17541a; color: white; }
     75% { background-color: #FF9800; color: white; }
     100% { background-color: #0077cc; color: white; }
   }
