@@ -1,6 +1,6 @@
 let membershipDetails = [];
 
-fetch("membership-levels.json")
+fetch("data/membership-levels.json")
   .then((response) => response.json())
   .then((data) => {
     membershipDetails = data;
@@ -19,9 +19,9 @@ function populateCards() {
 
     card.innerHTML = `
       <h3>${level.name}</h3>
-      <p>${level.description}</p>
-      <p><strong>Cost:</strong> ${level.cost}</p>
-      <button type="button" class="learn-more-btn" data-id="${level.id}">Learn More</button>
+      <button type="button" class="learn-more-btn" data-id="${level.id}">
+        Learn More
+      </button>
     `;
 
     container.appendChild(card);

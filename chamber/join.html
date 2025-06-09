@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="styles/index.css">
     <link rel="stylesheet" href="styles/small-index.css">
     <link rel="stylesheet" href="styles/join.css">
+    <link rel="stylesheet" href="styles/small-join.css">
     <script type="module" src="scripts/join.js"></script>
     <link rel="icon" href="data:,">
    <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -47,63 +48,76 @@
       </header>
        
     <main>
+        <div class="form-wrapper">
        <form action="thankyou.html" method="get">
+        <div class="form-fields">
         <label for="firstname">First Name:</label>
         <input type="text" id="firstname" name="firstname" title="First Name" required autocomplete="given-name">
+        </div>
+        <div class="form-fields">
         <label for="lastname">Last Name:</label>
         <input type="text" id="lastname" name="lastname" title="Last Name" required autocomplete="family-name">
+        </div>
+        <div class="form-fields">
         <label for="organization">Organization Title:</label>
         <input type="text" id="organization-title" name="organization-title" required autocomplete="organization-title"
         title="Organization Title" 
         pattern="[A-Za-z0-9\s]{1,50}">
+        </div>
+        <div class="form-fields">
         <label for="email">Email:</label>
         <input type="email" id="email" name="email" required autocomplete="email" title="Email Address" placeholder="youremail@gmail.com">
+        </div>
+        <div class="form-fields">
         <label for="phone">Phone Number:</label>
         <input type="text" id="phone" name="phone" required autocomplete="tel" title="Phone Number">
+        </div>
+        <div class="form-fields">
         <label for="business-name">Business/Organization Name:</label>
         <input type="text" id="business-name" name="business-name" required autocomplete="organization" title="Business Name">
+        </div>
+    </div>
+        <div class="membership-container">
+         
         <fieldset>
-            <legend>Select Your Membership Level</legend>
+            <legend class="title">Membership Level</legend>
             <label>
               <input type="radio" name="membershipLevel" value="np" class="membership-option" required>
               Non-Profit
-              <button type="button" class="info-btn" data-id="np" aria-label="More info about Non-Profit">?</button>
             </label><br>
             <label>
               <input type="radio" name="membershipLevel" value="bronze" class="membership-option">
               Bronze
-              <button type="button" class="info-btn" data-id="bronze" aria-label="More info about Bronze">?</button>
             </label><br>
             <label>
               <input type="radio" name="membershipLevel" value="silver" class="membership-option">
               Silver
-              <button type="button" class="info-btn" data-id="silver" aria-label="More info about Silver">?</button>
             </label><br>
             <label>
               <input type="radio" name="membershipLevel" value="gold" class="membership-option">
               Gold
-              <button type="button" class="info-btn" data-id="gold" aria-label="More info about Gold">?</button>
             </label>
           </fieldset> 
           <div class="membership-cards" id="membershipCardsContainer">
-    
           </div>
-          
+        </div>
+         <div class="business" >
         <label for="description">Business/Organization description</label>    
-        <textarea id="description" name="description" rows="4" cols="50" required ></textarea>  
-        <input type="hidden" name="timestamp" id="timestamp">   
-        <button type="submit" id="submit-button">Join Now</button>     
+        <textarea id="description" name="description" rows="4" cols="50" required ></textarea> 
+    </div> 
+        <input type="hidden" name="timestamp" id="timestamp">  
+     <div class="button">
+        <button type="submit" id="submit-button">Join Now</button> 
+    </div>    
         </form>
-        <dialog id="membershipModal">
-            <button id="closeModal" aria-label="Close modal">×</button>
-            <h2 id="modalTitle"></h2>
-            <p id="modalDescription"></p>
-            <p><strong>Benefits:</strong> <span id="modalBenefits"></span></p>
-            <p><strong>Cost:</strong> <span id="modalCost"></span></p>
-          </dialog>
-          
-          
-          
+
+<dialog id="membershipModal">
+    <button id="closeModal" aria-label="Close modal">×</button>
+    <h2 id="modalTitle"></h2>
+    <p id="modalDescription"></p>
+    <p><strong>Benefits:</strong> <span id="modalBenefits"></span></p>
+    <p><strong>Cost:</strong> <span id="modalCost"></span></p>
+</dialog>    
     </main>
     <footer class="footer-content">
   <div class="footer-left">

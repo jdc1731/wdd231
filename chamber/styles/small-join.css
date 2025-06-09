@@ -1,0 +1,24 @@
+@media (max-width: 550px) {
+    .membership-container {
+      grid-template-columns: 1fr; /* stack vertically */
+      gap: 2rem;
+      width: 95%;
+    }
+  
+    .membership-card {
+      width: 100%; /* fill container */
+    }
+  
+    .form-fields {
+      width: 95%;
+    }
+  
+    #description {
+      width: 95%;
+    }
+  
+    #submit-button {
+      width: 100%;
+      font-size: 20px;
+    }
+  }
