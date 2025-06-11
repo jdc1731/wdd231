@@ -1,0 +1,126 @@
+/* cards */
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 1rem;
+    padding: 1rem;
+    
+}
+.interest-card  {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+      "image name"
+      "image address"
+      "fig button";
+    gap: 0.5rem 1rem;
+    padding: 1rem;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    align-items: start;
+    
+  }
+  
+  
+  .interest-card img {
+    grid-area: image;
+    width: 200px;
+    height: 300px;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+  
+  .interest-card h2 {
+    grid-area: name;
+    margin: 0;
+    font-size: 1.5rem;
+  }
+  
+  .interest-card .address {
+    grid-area: address;
+    margin: 0;
+    color: #555;
+  }
+  
+  .interest-card figcaption {
+    grid-area: fig;
+  }
+
+  .interest-card button {
+    grid-area: button;
+    justify-self: start;
+    padding: 0.5rem 1rem;
+    background-color: #004b6e;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .interest-card button:hover {
+    background-color: #007bb8;
+  }
+
+  div.interest-card img:hover {
+    border-radius: 15px 150px;
+  }
+
+/* modal */
+dialog#pointModal {
+    width: 90%;
+    max-width: 500px;
+    border: none;
+    border-radius: 10px;
+    padding: 2rem 1.5rem 1.5rem;
+    background-color: #fff;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    position: relative;
+    text-align: left;
+    left: 250px;
+    top: 250px;
+  }
+  
+  dialog::backdrop {
+    background: rgba(0, 0, 0, 0.6);
+  }
+  
+  #closeModal {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #333;
+  }
+  
+  #modalTitle {
+    margin-top: 0;
+  }
+
+  p#modalAddress {
+    margin-top: 15px;
+    font-weight: bold;
+    font-size: 20px;
+  }
+
+  p#modalDescription {
+    margin-top: 15px;
+    font-size: 20px;
+  }
+
+  /* visit message */
+  .sidebar-message {
+    padding: 1rem;
+    background-color:  #BDBBB6;
+    margin: 1rem 0;
+    font-weight: bold;
+    font-size: 25px;
+    text-align: center;
+  }
+  
+  

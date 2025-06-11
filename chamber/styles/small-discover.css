@@ -1,0 +1,41 @@
+@media (max-width: 640px) {
+    .card-container {
+        grid-template-columns: 1fr;
+      }
+    
+      .interest-card {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+          "name"
+          "image"
+          "fig"
+          "address"
+          "button";
+      }
+    
+      .interest-card img {
+        width: 200px;
+        height: 250px;
+      }
+    
+    /* modal */
+    dialog#pointModal {
+      width: 95%;
+      padding: 1.5rem 1rem 1rem;
+    }
+  
+    #closeModal {
+      top: 0.75rem;
+      right: 0.75rem;
+    }
+
+    /* cards */
+    div.interest-card  {
+        grid-template-areas: 
+        "name"
+        "image"
+        "fig"
+        "address"
+        "button";
+    }
+  }

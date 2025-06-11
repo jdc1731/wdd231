@@ -1,0 +1,58 @@
+[
+  {
+    "name": "Big John",
+    "address": "19 S Main St, Helper, UT 84526",
+    "description": "Loved by locals, this fiberglass statue has been standing proud in Helper since the 1960s. Big John, named after the Jimmy Dean song “Big Bad John,” is an unofficial memorial to the many minors that lost their lives during the since mining started in the area in the 1890s.",
+    "image": "images/bigJohn.webp",
+    "caption": "A tribute to coal miners"
+  },
+  {
+    "name": "Vintage Motor Company & The Lincoln Hotel",
+    "address": "56 South Main , Helper UT 84526",
+    "description": "Vintage Motor Company & Lincoln Hotel is a museum-style collection of vintage motorcycles, classic cars, and memorabilia.",
+    "image": "images/hotel.webp",
+    "caption":"Lincoln Hotel"
+  },
+  {
+    "name": "Historic CONOCO Station",
+    "address": "398 S Main St, Helper Ut 84526",
+    "description": "Historically restored CONOCO gas station is a hidden gem. You can find two other similar gas stations in town.",
+    "image": "images/conoco.webp",
+    "caption": "20th-century gas station landmark"
+  },
+  {
+    "name": "Western Mining and Railroad Museum",
+    "address": "294 S Main St, Helper, UT 84526",
+    "description": "Nestled in the historic Old Helper Hotel, the museum offers a captivating look into Carbon County’s coal mining and railroad heritage via four floors of artifacts, themed rooms, and model trains. ",
+    "image": "images/helpermuseum.webp",
+    "caption":"Artifacts and stories"
+  },
+  {
+    "name": "Carbon Country Club Golf Course",
+    "address": "3055 N Highway 50‑6, Helper, UT 84526",
+    "description": "This scenic 18 hole championship course is carved into rugged mesas and canyon terrain. Open to the public (though semi‑private), it includes a driving range, putting green, pro shop, and onsite dining serving everything from casual fare to prime rib.",
+    "image": "images/golfCourse.webp",
+    "caption":"Mountain views meet championship fairways"
+  },
+  {
+    "name": "Gateway Lanes",
+    "address": "94 S Main St, Helper, UT 84526",
+    "description": "Gateway Lanes is an eight-lane bowling alley. It offers open bowling, youth leagues, and glow-in-the-dark games. It has a snack bar with drinks, pizza and more.",
+    "image": "images/gateway.webp",
+    "caption":"Bowling fun for families and night owls"
+  },
+  {
+    "name": "Gordon Creek Falls",
+    "address": "Helper Utah",
+    "description": "Gordon Creek Falls is a scenic double waterfall nestled in a rugged desert canyon. The short hike to the falls offers striking views of red rock cliffs, wildflowers, and wildlife.",
+    "image": "images/gordoncreek.webp",
+    "caption":"Twin waterfalls tucked in a desert canyon"
+  },
+  {
+    "name": "Balance Rock",
+    "address": "Helper Utah",
+    "description": "Just north of Helper, Balance Rock is a natural tower. The 6-mile (round‑trip) hike offers adventurous visitors rewarding canyon and river views. At the summit, hikers pass a tradition of swapping flags on the rock’s flagpole before descending.",
+    "image": "images/balanceRock.webp",
+    "caption":"A scenic hike to a natural balancing act"
+  }
+]
