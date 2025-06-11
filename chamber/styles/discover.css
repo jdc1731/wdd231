@@ -8,7 +8,6 @@
 }
 .interest-card  {
     display: grid;
-    
     grid-template-areas:
       "image name"
       "image address"
