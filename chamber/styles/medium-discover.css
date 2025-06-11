@@ -5,10 +5,9 @@
       }
     
       .interest-card {
-        grid-template-columns: 200px 1fr;
         grid-template-areas:
           "image name"
-          "fig address"
-          "fig button";
+          "image address"
+          "image button";
       }
     }

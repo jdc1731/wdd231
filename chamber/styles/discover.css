@@ -8,21 +8,19 @@
 }
 .interest-card  {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto auto;
+    
     grid-template-areas:
       "image name"
       "image address"
-      "fig button";
+      "image button";
     gap: 0.5rem 1rem;
     padding: 1rem;
     background: #fff;
     border-radius: 10px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    align-items: start;
+    /* align-items: start; */
     
   }
-  
   
   .interest-card img {
     grid-area: image;
@@ -39,15 +37,12 @@
     font-size: 1.5rem;
   }
   
-  .interest-card .address {
+  .interest-card p {
     grid-area: address;
     margin: 0;
     color: #555;
   }
   
-  .interest-card figcaption {
-    grid-area: fig;
-  }
 
   .interest-card button {
     grid-area: button;
