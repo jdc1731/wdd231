@@ -8,10 +8,11 @@
         grid-template-areas:
           "image name"
           "image address"
-          "image button";
+          "image button"
+          "fig button";
           align-items: center; 
       }
-      
+
         .interest-card h2,
         .interest-card p,
         .interest-card button {

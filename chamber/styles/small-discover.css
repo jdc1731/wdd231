@@ -8,6 +8,7 @@
         grid-template-areas:
           "name"
           "image"
+          "fig"
           "address"
           "button";
           justify-items: center; 
