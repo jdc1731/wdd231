@@ -11,16 +11,24 @@
 <meta property="og:description" content="This webpage is the chamber of commerce for Helper Utah.">
 <meta property="og:url" content="https://jdc1731.github.io/wdd231/">
     <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/directory.css">
-    <link rel="stylesheet" href="styles/large-directory.css">
-    <link rel="stylesheet" href="styles/discover.css">
-    <link rel="stylesheet" href="styles/medium-discover.css">
-    <link rel="stylesheet" href="styles/small-discover.css">
-    <script type="module" src="scripts/discovery.js"></script>
+    <link rel="stylesheet" href="styles/large-directory.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="styles/discover.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="styles/medium-discover.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="styles/small-discover.css" media="print" onload="this.media='all'">
+    <noscript>
+      <link rel="stylesheet" href="styles/large-directory.css">
+      <link rel="stylesheet" href="styles/discover.css">
+      <link rel="stylesheet" href="styles/medium-discover.css">
+      <link rel="stylesheet" href="styles/small-discover.css">
+    </noscript>
+    
+    <script type="module" src="scripts/discovery.js" defer></script>
     <link rel="icon" href="data:,">
    <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap">
+
 <link rel="icon" type="image/x-ico" sizes="16x16" href="images/favicon.ico">
 <title> Helper Utah Chamber of Commerce Discover Page </title>
 
