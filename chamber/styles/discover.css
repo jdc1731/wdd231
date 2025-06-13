@@ -11,7 +11,8 @@
     grid-template-areas:
       "image name"
       "image address"
-      "image button";
+      "image button"
+      "fig button";
     gap: 0.5rem 1rem;
     padding: 1rem;
     background: #fff;
@@ -22,6 +23,7 @@
   }
   
   .interest-card img {
+    display: grid;
     grid-area: image;
     width: 200px;
     height: 300px;
@@ -42,11 +44,19 @@
     color: #555;
   }
   
+  .interest-card figcaption {
+    grid-area: fig;
+    font-size: 0.9rem;
+    color: #777;
+    margin-top: 0.5rem;
+  }
 
   .interest-card button {
     grid-area: button;
-    justify-self: start;
-    padding: 0.5rem 1rem;
+    justify-self: center; 
+    padding: 10px; 
+    font-size: 0.9rem; 
+    height: 50px;
     background-color: #004b6e;
     color: #fff;
     border: none;
@@ -62,6 +72,15 @@
     border-radius: 15px 150px;
   }
 
+  .interest-card h2,
+  .interest-card p,
+  .interest-card figcaption,
+  .interest-card button {
+    align-self: center;  
+    justify-self: center; 
+    text-align: center; 
+  }
+
 /* modal */
 dialog#pointModal {
     width: 90%;
@@ -71,10 +90,13 @@ dialog#pointModal {
     padding: 2rem 1.5rem 1.5rem;
     background-color: #fff;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-    position: relative;
+    position: fixed; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
     text-align: left;
-    left: 250px;
-    top: 250px;
+    margin: 0; 
+    box-sizing: border-box;
   }
   
   dialog::backdrop {

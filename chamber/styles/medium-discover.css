@@ -9,5 +9,13 @@
           "image name"
           "image address"
           "image button";
+          align-items: center; 
       }
-    }
+      
+        .interest-card h2,
+        .interest-card p,
+        .interest-card button {
+          justify-self: center;  
+          text-align: center;   
+        }
+      }

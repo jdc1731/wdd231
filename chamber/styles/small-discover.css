@@ -10,6 +10,8 @@
           "image"
           "address"
           "button";
+          justify-items: center; 
+          text-align: center; 
       }
     
       .interest-card img {
@@ -28,13 +30,17 @@
       right: 0.75rem;
     }
 
-    /* cards */
-    div.interest-card  {
-        grid-template-areas: 
-        "name"
-        "image"
-        "fig"
-        "address"
-        "button";
+    .interest-card h2,
+    .interest-card p,
+    .interest-card button {
+     max-width: 90%;
     }
+
+    /* modal */
+    #modalTitle,
+    #modalAddress,
+    #modalDescription {
+    text-align: center;
+    }
+
   }

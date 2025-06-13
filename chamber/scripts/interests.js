@@ -19,12 +19,11 @@ function populateCards() {
     card.classList.add("interest-card");
 
     card.innerHTML = `
-    <figure>
-      <img src="${point.image}" alt="${point.name}">
-      <figcaption>${point.caption}</figcaption>
-    </figure>
+    <img src="${point.image}" alt="${point.name}">
+    <figcaption>${point.caption}</figcaption>
     <h2>${point.name}</h2>
     <p>${point.address}</p>
+    <figcaption>${point.fig}</figcaption>
     <button class="learn-more-btn" data-id="${index}">Learn More</button>
   `;
   
