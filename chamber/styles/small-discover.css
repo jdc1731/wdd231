@@ -18,6 +18,10 @@
         width: 200px;
         height: 250px;
       }
+
+      div.interest-card img:hover { 
+        transition: none;
+    }
     
     /* modal */
     dialog#pointModal {
@@ -36,7 +40,6 @@
      max-width: 90%;
     }
 
-    /* modal */
     #modalTitle,
     #modalAddress,
     #modalDescription {
