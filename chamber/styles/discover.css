@@ -68,9 +68,12 @@
     background-color: #007bb8;
   }
 
-  div.interest-card img:hover {
-    border-radius: 15px 150px;
+  @media (min-width:641px) {
+    div.interest-card img:hover {
+        border-radius: 15px 150px;
+      }
   }
+ 
 
   .interest-card h2,
   .interest-card p,
