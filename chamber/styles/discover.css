@@ -46,8 +46,9 @@
   
   .interest-card figcaption {
     grid-area: fig;
-    font-size: 0.9rem;
-    color: #777;
+    font-size: 16px;
+    font-weight: bold;
+    color:black;
     margin-top: 0.5rem;
   }
 
