@@ -51,67 +51,39 @@
         <h1>Join Helper Chamber of Commerce
         </h1>
         <div class="form-wrapper">
-       <form action="thankyou.html" method="get">
-        <div class="form-fields">
+    <form id="gardeningForm">
+      <div class="form-fields">
         <label for="firstname">First Name:</label>
-        <input type="text" id="firstname" name="firstname" title="First Name" required autocomplete="given-name">
-        </div>
-        <div class="form-fields">
+        <input type="text" id="firstname" name="firstname" required autocomplete="given-name" title="First Name">
+      </div>
+
+      <div class="form-fields">
         <label for="lastname">Last Name:</label>
-        <input type="text" id="lastname" name="lastname" title="Last Name" required autocomplete="family-name">
-        </div>
-        <div class="form-fields">
-        <label for="organization-title">Organization Title:</label>
-        <input type="text" id="organization-title" name="organization-title" required autocomplete="organization-title"
-        title="Organization Title" 
-        pattern="[A-Za-z0-9\s]{1,50}">
-        </div>
-        <div class="form-fields">
+        <input type="text" id="lastname" name="lastname" required autocomplete="family-name" title="Last Name">
+      </div>
+
+      <div class="form-fields">
         <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required autocomplete="email" title="Email Address" placeholder="youremail@gmail.com">
-        </div>
-        <div class="form-fields">
-        <label for="phone">Phone Number:</label>
-        <input type="tel" id="phone" name="phone" required autocomplete="tel" title="Phone Number">
-        </div>
-        <div class="form-fields">
-        <label for="business-name">Business/Organization Name:</label>
-        <input type="text" id="business-name" name="business-name" required autocomplete="organization" title="Business Name">
-        </div>
-        <div class="membership-container">
-         
-        <fieldset>
-            <legend class="title">Membership Level</legend>
-            <label>
-              <input type="radio" name="membershipLevel" value="np" class="membership-option" required>
-              Non-Profit
-            </label><br>
-            <label>
-              <input type="radio" name="membershipLevel" value="bronze" class="membership-option">
-              Bronze
-            </label><br>
-            <label>
-              <input type="radio" name="membershipLevel" value="silver" class="membership-option">
-              Silver
-            </label><br>
-            <label>
-              <input type="radio" name="membershipLevel" value="gold" class="membership-option">
-              Gold
-            </label>
-          </fieldset> 
-          <div class="membership-cards" id="membershipCardsContainer">
-          </div>
-        </div>
-         <div class="business" >
-        <label for="description">Business/Organization description</label>    
-        <textarea id="description" name="description" rows="4" cols="50" required ></textarea> 
-    </div> 
-        <input type="hidden" name="timestamp" id="timestamp">  
-     <div class="button">
-        <button type="submit" id="submit-button">Join Now</button> 
-    </div>    
-        </form>
-    </div>
+        <input type="email" id="email" name="email" required autocomplete="email" title="Email" placeholder="you@example.com">
+      </div>
+
+      <fieldset>
+        <legend class="title">Gardening Level</legend>
+        <label><input type="radio" name="gardeningLevel" value="beginner" required> Beginner</label><br>
+        <label><input type="radio" name="gardeningLevel" value="intermediate"> Intermediate</label><br>
+        <label><input type="radio" name="gardeningLevel" value="advanced"> Advanced</label>
+      </fieldset>
+
+      <div class="form-fields">
+        <label for="advice">Your Gardening Tip:</label>
+        <textarea id="advice" name="advice" rows="4" cols="50" required></textarea>
+      </div>
+
+      <div class="button">
+        <button type="submit" id="submit-button">Submit Advice</button>
+      </div>
+    </form>
+  </div>
 
 <dialog id="membershipModal">
     <button id="closeModal" aria-label="Close modal">×</button>

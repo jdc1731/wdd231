@@ -1,0 +1,107 @@
+[
+  {
+    "name": "Rocky Mountain Bee Plant",
+    "category": "wildflower",
+    "sun": "Full Sun",
+    "water": "Low",
+    "image": "https://wildflowersearch.org/image_seed/10217/84973/NRELSGSL_RMbeeplant.jpg"
+  },
+  {
+    "name": "Blue Flax",
+    "category": "wildflower",
+    "sun": "Full Sun",
+    "water": "Low",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/5/5b/Linum_lewisii_elena_gallegos.jpg"
+  },
+  {
+    "name": "Wasatch Penstemon",
+    "category": "wildflower",
+    "sun": "Full Sun",
+    "water": "Medium",
+    "image": "https://cdn.pixabay.com/photo/2017/07/04/19/23/penstemon-2475526_1280.jpg"
+  },
+  {
+    "name": "Serviceberry",
+    "category": "shrub",
+    "sun": "Full Sun to Part Shade",
+    "water": "Low",
+    "image": "https://cdn.pixabay.com/photo/2016/05/14/14/40/amelanchier-1392918_1280.jpg"
+  },
+  {
+    "name": "Bigtooth Maple",
+    "category": "tree",
+    "sun": "Full Sun",
+    "water": "Low",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/1/1a/Acer_grandidentatum_leaf_5.jpg"
+  },
+  {
+    "name": "Utah Sweetvetch",
+    "category": "wildflower",
+    "sun": "Full Sun",
+    "water": "Low",
+    "image": "https://extension.usu.edu/files/publications/publication/Hedysarum_boreale_2000.jpg"
+  },
+  {
+    "name": "Yarrow",
+    "category": "perennial",
+    "sun": "Full Sun",
+    "water": "Low",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/0/08/Achillea_millefolium_03.jpg"
+  },
+  {
+    "name": "Tomato",
+    "category": "vegetable",
+    "sun": "Full Sun",
+    "water": "Medium",
+    "image": "https://cdn.pixabay.com/photo/2016/03/05/19/02/tomato-1238250_1280.jpg"
+  },
+  {
+    "name": "Zucchini",
+    "category": "vegetable",
+    "sun": "Full Sun",
+    "water": "Medium",
+    "image": "https://cdn.pixabay.com/photo/2017/07/19/17/38/courgette-2528456_1280.jpg"
+  },
+  {
+    "name": "Basil",
+    "category": "herb",
+    "sun": "Full Sun",
+    "water": "Medium",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/8/8a/Basil_%28Ocimum_basilicum%29_4.jpg"
+  },
+  {
+    "name": "Mint",
+    "category": "herb",
+    "sun": "Part Shade",
+    "water": "High",
+    "image": "https://cdn.pixabay.com/photo/2016/11/29/03/17/mint-1868801_1280.jpg"
+  },
+  {
+    "name": "Lavender",
+    "category": "herb",
+    "sun": "Full Sun",
+    "water": "Low",
+    "image": "https://cdn.pixabay.com/photo/2018/06/05/10/14/lavender-3455565_1280.jpg"
+  },
+  {
+    "name": "Squash",
+    "category": "vegetable",
+    "sun": "Full Sun",
+    "water": "Medium",
+    "image": "https://cdn.pixabay.com/photo/2017/08/19/19/35/pumpkin-2652935_1280.jpg"
+  },
+  {
+    "name": "Chokecherry",
+    "category": "shrub",
+    "sun": "Full Sun to Part Shade",
+    "water": "Medium",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Prunus_virginiana_berries.jpg"
+  },
+  {
+    "name": "Blanket Flower",
+    "category": "wildflower",
+    "sun": "Full Sun",
+    "water": "Low",
+    "image": "https://cdn.pixabay.com/photo/2017/05/16/13/18/gaillardia-2312585_1280.jpg"
+  }
+]

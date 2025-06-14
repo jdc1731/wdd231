@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Thank You</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      padding: 2rem;
+      background-color: #f0f5f0;
+      color: #333;
+    }
+    .card {
+      background-color: white;
+      padding: 1.5rem;
+      border-radius: 1rem;
+      max-width: 600px;
+      margin: 0 auto;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h1 {
+      color: #7b9e87;
+    }
+    .button {
+      margin-top: 1rem;
+    }
+    a.button-link {
+      display: inline-block;
+      padding: 0.75rem 1.5rem;
+      background-color: #b497bd;
+      color: white;
+      text-decoration: none;
+      border-radius: 0.5rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>Thank You for Your Gardening Tip!</h1>
+    <p><strong>Name:</strong> <span id="name"></span></p>
+    <p><strong>Email:</strong> <span id="email"></span></p>
+    <p><strong>Gardening Level:</strong> <span id="level"></span></p>
+    <p><strong>Your Tip:</strong></p>
+    <blockquote id="tip"></blockquote>
+
+    <div class="button">
+      <a href="advice.html" class="button-link">Return to Submit Page</a>
+    </div>
+  </div>
+
+  <script>
+    const latest = JSON.parse(localStorage.getItem('latestGardeningAdvice'));
+
+    if (latest) {
+      document.getElementById('name').textContent = `${latest.firstName} ${latest.lastName}`;
+      document.getElementById('email').textContent = latest.email;
+      document.getElementById('level').textContent = latest.gardeningLevel;
+      document.getElementById('tip').textContent = latest.advice;
+    } else {
+      document.querySelector('.card').innerHTML = `
+        <h1>No submission found</h1>
+        <a href="advice.html" class="button-link">Go back to the form</a>
+      `;
+    }
+  </script>
+</body>
+</html>
