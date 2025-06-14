@@ -49,46 +49,44 @@
     <main>
             <h1>Share Your Gardening Advice</h1>
             <div class="form-wrapper">
-                <form id="gardeningForm" action="thankyou.html" method="get">
-
-                  <div class="form-fields">
-                    <label for="firstname">First Name:</label>
-                    <input type="text" id="firstname" name="firstname" required autocomplete="given-name" title="First Name">
-                  </div>
+                <form action="thankyou.html" method="get">
+                    <div class="form-fields">
+                      <label for="firstname">First Name:</label>
+                      <input type="text" id="firstname" name="firstname" required autocomplete="given-name">
+                    </div>
+                    <div class="form-fields">
+                      <label for="lastname">Last Name:</label>
+                      <input type="text" id="lastname" name="lastname" required autocomplete="family-name">
+                    </div>
+                    <div class="form-fields">
+                      <label for="email">Email:</label>
+                      <input type="email" id="email" name="email" required autocomplete="email" placeholder="youremail@gmail.com">
+                    </div>
             
-                  <div class="form-fields">
-                    <label for="lastname">Last Name:</label>
-                    <input type="text" id="lastname" name="lastname" required autocomplete="family-name" title="Last Name">
-                  </div>
+                    <fieldset>
+                      <legend>Gardening Experience</legend>
+                      <label><input type="radio" name="experienceLevel" value="beginner" required> Beginner</label><br>
+                      <label><input type="radio" name="experienceLevel" value="intermediate"> Intermediate</label><br>
+                      <label><input type="radio" name="experienceLevel" value="expert"> Expert</label><br>
+                    </fieldset>
             
-                  <div class="form-fields">
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required autocomplete="email" title="Email" placeholder="you@example.com">
-                  </div>
+                    <div class="form-fields">
+                      <label for="description">What is Your Advice?</label>
+                      <textarea id="description" name="description" rows="4" cols="50" required></textarea>
+                    </div>
             
-                  <fieldset>
-                    <legend class="title">Gardening Level</legend>
-                    <label><input type="radio" name="gardeningLevel" value="beginner" required> Beginner</label><br>
-                    <label><input type="radio" name="gardeningLevel" value="intermediate"> Intermediate</label><br>
-                    <label><input type="radio" name="gardeningLevel" value="advanced"> Advanced</label>
-                  </fieldset>
+                    <input type="hidden" name="timestamp" id="timestamp">
             
-                  <div class="form-fields">
-                    <label for="advice">Your Gardening Tip:</label>
-                    <textarea id="advice" name="advice" rows="4" cols="50" required></textarea>
-                  </div>
-            
-                  <div class="button">
-                    <button type="submit" id="submit-button">Submit Advice</button>
-                  </div>
-                </form>
-              </div>
+                    <div class="button">
+                      <button type="submit">Submit Advice</button>
+                    </div>
+                  </form>
+             </div>
     </main>
+
         </body>
         </html>
         
-
-    </main>
     <footer class="footer-content">
   <div class="footer-left">
     <p>Life in Bloom</p>

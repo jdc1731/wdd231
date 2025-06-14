@@ -1,19 +1,13 @@
-// thankyou.js
-export function displayThankYouData() {
-  document.addEventListener("DOMContentLoaded", () => {
-    const data = JSON.parse(localStorage.getItem("latestGardeningAdvice"));
+document.addEventListener("DOMContentLoaded", () => {
+  const params = new URLSearchParams(window.location.search);
 
-    if (!data) return;
-
-    document.getElementById("displayFirstName").textContent =
-      data.firstName || "N/A";
-    document.getElementById("displayLastName").textContent =
-      data.lastName || "N/A";
-    document.getElementById("displayEmail").textContent = data.email || "N/A";
-    document.getElementById("displayGardeningLevel").textContent =
-      data.gardeningLevel || "N/A";
-    document.getElementById("displayAdvice").textContent = data.advice || "N/A";
-    document.getElementById("displayTimestamp").textContent =
-      new Date(data.timestamp).toLocaleString() || "N/A";
-  });
-}
+  document.getElementById("displayFirstName").textContent =
+    params.get("firstname") || "N/A";
+  document.getElementById("displayLastName").textContent =
+    params.get("lastname") || "N/A";
+  document.getElementById("displayEmail").textContent =
+    params.get("email") || "N/A";
+ ("description").textContent = params.get("displayDescription") || "N/A";
+  document.getElementById("displayTimestamp").textContent =
+    params.get("timestamp") || "N/A";
+});
