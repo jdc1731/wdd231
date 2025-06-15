@@ -21,7 +21,7 @@ async function displaySpotlights() {
       card.classList.add("spotlight-card");
       card.innerHTML = `
     <h3>${plant.name}</h3>
-    <img src="${plant.image}" alt="${plant.name}">
+    <img src="${plant.image}" alt="${plant.name}" loading="lazy">
     <p>Category: ${plant.category}</p>
     <p>Sunlight: ${plant.sun}</p>
     <p>Watering: ${plant.water}</p>

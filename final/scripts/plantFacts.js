@@ -26,7 +26,7 @@ function displayPlants(plants) {
     card.classList.add("plant-card");
     card.innerHTML = `
       <h2>${plant.name}</h2>
-      <img src="${plant.image}" alt="${plant.name}">
+      <img src="${plant.image}" alt="${plant.name}" loading="lazy">
       <button class="learn-more" data-index="${index}">Information</button>
     `;
     cardsContainer.appendChild(card);
