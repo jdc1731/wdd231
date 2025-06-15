@@ -142,4 +142,10 @@ section h2 {
     border-top: solid 2px var(--primary-color);
   }
 
- 
+ @media screen and (max-width: 500px) {
+    #dailyTip {
+      width: 90%;
+      padding: 2rem;
+      font-size: 1.2rem;
+    }
+ }
