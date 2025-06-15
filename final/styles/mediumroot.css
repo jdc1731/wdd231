@@ -2,31 +2,28 @@
  
     ul.menuLinks  {
      display: flex;
-     justify-content: flex-end;
-    gap: 2rem;
+    justify-content: center;
+    gap: 1rem;
     background-color: var(--primary-color);
+    width: 100%;
     }
- 
-    ul.menuLinks {
-       display: flex;
-       justify-content: flex-end;
-       gap: 1rem;
-       background-color: var(--primary-color);
-       
-    }
+
    
     #myButton {
        display: none;
     }
  
     nav {
-       position: relative;
-       display: flex;
-       justify-content: center;
-       align-items: center;
-       height: 70px;
-       width: 350px;
-   }
+      position: relative;
+      display: flex;
+      justify-content: flex-start; /* change from center to flex-start */
+      align-items: center;
+      height: 70px;
+      width: 100%; /* change from 350px to 100% so it fits the screen */
+      padding-left: 1rem; /* optional: adds some left space */
+      box-sizing: border-box; /* ensures padding doesn't add to total width */
+    }
+    
  
     .view-toggle {
        display: flex;

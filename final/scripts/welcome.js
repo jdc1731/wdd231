@@ -19,8 +19,10 @@ export function showVisitMessage() {
     }
   }
 
-  // Display the message
-  sidebar.textContent = message;
+  // ✅ Only set the message if the sidebar exists
+  if (sidebar) {
+    sidebar.textContent = message;
+  }
 
   // Store the current time for the next visit
   localStorage.setItem("lastVisit", now);

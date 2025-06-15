@@ -1,0 +1,145 @@
+h1 {
+    text-align: center;
+    margin: 20px 0;
+   font-size: 35px;
+   padding: 2rem;
+   
+}
+.spotlight-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    gap: 4rem;
+    padding: 1rem;
+    margin-bottom: 60px;
+
+  }
+  
+
+  .spotlight-container img {
+    width: 250px;
+    height: 300px;         
+    object-fit: cover; 
+    display: block;
+    border-radius: 0.5rem; 
+    margin: 10px;
+  }
+
+  .spotlight-container p {
+    text-align: center;
+    font-size: 1.2rem;
+    
+  }
+
+  h3 {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-top: 20px;
+    
+  }
+
+  .hero_img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+  }
+
+  .hero-container {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+  
+  .cta {
+    position: absolute;
+    top: 50%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color:var(--background-color) ;
+    color: white;
+    width: 300px;
+    border-radius: 8px;
+    padding: 30px;
+    background-color: rgba(57, 57, 83, 0.5);  
+
+  }
+
+  .cta p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  .button-style {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px 20px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.5rem;
+    text-decoration: none;
+  }
+
+  aside {
+    margin: 20px;
+    padding: 20px;
+    background-color: var(--background-color);
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+  } 
+
+  @media screen and (max-width: 640px) {
+    .cta {
+      left: 50%; 
+    }
+  }
+  
+/* advice of the day */
+
+#advice h2 {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 40px;
+    padding: 1rem;
+  }
+
+  #dailyTip {
+    text-align: center;  
+    margin: 0 auto 50px;
+    width: 400px;  
+    padding: 3rem;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    color: black;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    text-shadow: 0 0 10px #1c0639, 0 0 20px #6b8e23;
+    background: linear-gradient(-45deg, #6b8e23, #26113e, #12116f, #556b2f);
+    background-size: 400% 400%;
+    animation: gradientBG 8s ease infinite;
+    color: white;
+    text-align: center;
+    border-radius: 1rem;
+    font-size: 1.4rem;
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+  }
+
+  @keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+
+section h2 {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 40px;
+    padding: 1rem;
+    border-top: solid 2px var(--primary-color);
+  }
+
+ 

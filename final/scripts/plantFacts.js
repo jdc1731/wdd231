@@ -4,7 +4,6 @@ async function getPlants() {
   try {
     const response = await fetch(url);
     const data = await response.json();
-    displayPlants(data);
     return data;
   } catch (error) {
     console.error("Error fetching plants:", error);
@@ -12,17 +11,23 @@ async function getPlants() {
   }
 }
 
+
 function displayPlants(plants) {
   const cardsContainer = document.getElementById("plantCards");
+  if (!cardsContainer) {
+    console.warn("No element with ID 'plantCards' found.");
+    return;
+  }
+
   cardsContainer.innerHTML = "";
 
   plants.forEach((plant, index) => {
     const card = document.createElement("section");
     card.classList.add("plant-card");
     card.innerHTML = `
-        <h2>${plant.name}</h2>
-        <img src="${plant.image}" alt="${plant.name}">
-        <button class="learn-more" data-index="${index}">Information</button>
+      <h2>${plant.name}</h2>
+      <img src="${plant.image}" alt="${plant.name}">
+      <button class="learn-more" data-index="${index}">Information</button>
     `;
     cardsContainer.appendChild(card);
   });
@@ -34,6 +39,7 @@ function displayPlants(plants) {
     });
   });
 }
+
 
 function showModal(plant) {
   const modal = document.getElementById("plantModal");

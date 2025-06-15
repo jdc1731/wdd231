@@ -11,12 +11,11 @@
 <meta property="og:description" content="This webpage is a form to submit advice to the gardening page.">
 <meta property="og:url" content="https://jdc1731.github.io/wdd231/">
     <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/root.css">
     <link rel="stylesheet" href="styles/mediumroot.css">
     <link rel="stylesheet" href="styles/home.css">
     <link rel="stylesheet" href="styles/largeroot.css">
-    <script type="module" src="scripts/plants.js"></script>
+    <script type="module" src="scripts/home.js"></script>
     <link rel="icon" href="data:,">
    <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -48,15 +47,16 @@
     <main>
         <h1>Home</h1>
         <aside class="sidebar-message"></aside>
-        <div class="hero">
+        <div class="hero-container">
             <img class="hero_img" src="images/gradenhero.webp" alt="Gardening">
             
           <div class="cta">
             <h2>Give Gardening Advice</h2>
             <p>Share your gardening tips and tricks with our community.</p>
-            <a href="join.html" id="join-button" class="button-style">Join Now</a>
+            <a href="form.html" id="advice-button" class="button-style">Give Advice</a>
 
           </div>
+        </div>
           <section id="advice">
             <h2>Advice of the Day</h2>
             <p id="dailyTip">Loading tip...</p>

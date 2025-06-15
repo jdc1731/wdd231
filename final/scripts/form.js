@@ -1,4 +1,4 @@
-import { updateFooterDates, setupHamburgerMenu } from "./header-footer.js";
+import { updateFooterDates, setupHamburgerMenu } from "./headerFooter.js";
 import { getTimestamp } from "./timestamp.js";
 
 document.addEventListener("DOMContentLoaded", () => {

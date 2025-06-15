@@ -58,6 +58,7 @@
   #about {
     width: 100%;
     max-width: 800px;
+    font-size: 20px;
 
   }
 
@@ -107,3 +108,27 @@
         }
         
     }
+
+    #typewriter {
+      overflow: hidden; 
+      white-space: nowrap;
+      border-right: 3px solid #6b8e23; /* blinking cursor */
+      width: 0;
+      animation: typing 3s steps(30, end) forwards, blink 0.75s step-end infinite;
+      font-size: 2rem;
+      font-family: monospace;
+      color: #333;
+      margin: 2rem auto;
+      text-align: center;
+    }
+    
+    @keyframes typing {
+      from { width: 0; }
+      to { width: 100%; }
+    }
+    
+    @keyframes blink {
+      0%, 100% { border-color: transparent; }
+      50% { border-color: #6b8e23; }
+    }
+     

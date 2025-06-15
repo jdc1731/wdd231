@@ -160,3 +160,11 @@ footer {
         color: white;
         text-decoration: none;
      }
+
+     /* cta */
+
+     .cta {
+        left: 25%; /* move it more to the left */
+        transform: translate(-25%, -50%); /* adjust to match new left */
+        width: 90%; /* optional: let it take more space */
+      }
