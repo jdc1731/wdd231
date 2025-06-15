@@ -7,24 +7,31 @@ export function showVisitMessage() {
   if (!lastVisit) {
     message = "Welcome! Let us know if you have any questions.";
   } else {
-    const daysSince = Math.floor(
-      (now - Number(lastVisit)) / (1000 * 60 * 60 * 24)
-    );
-    if (daysSince < 1) {
-      message = "Back so soon! Awesome!";
-    } else if (daysSince === 1) {
-      message = "You last visited 1 day ago.";
-    } else {
-      message = `You last visited ${daysSince} days ago.`;
+    const timeDiff = now - Number(lastVisit);
+
+    const minutes = Math.floor((timeDiff / (1000 * 60)) % 60);
+    const hours = Math.floor((timeDiff / (1000 * 60 * 60)) % 24);
+    const days = Math.floor(timeDiff / (1000 * 60 * 60 * 24));
+
+    let timeParts = [];
+    if (days > 0) timeParts.push(`${days} day${days !== 1 ? "s" : ""}`);
+    if (hours > 0) timeParts.push(`${hours} hour${hours !== 1 ? "s" : ""}`);
+    if (minutes > 0)
+      timeParts.push(`${minutes} minute${minutes !== 1 ? "s" : ""}`);
+
+    if (timeParts.length === 0) {
+      timeParts.push("just a few moments");
     }
+
+    message = `Welcome back! It has been ${timeParts.join(
+      ", "
+    )} since your last visit.`;
   }
 
-  // ✅ Only set the message if the sidebar exists
   if (sidebar) {
     sidebar.textContent = message;
   }
 
-  // Store the current time for the next visit
   localStorage.setItem("lastVisit", now);
 }
 
