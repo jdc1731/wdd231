@@ -117,9 +117,9 @@ h1 {
     font-size: 1.5rem;
     color: black;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-    text-shadow: 0 0 10px #1c0639, 0 0 20px #6b8e23;
-    background: linear-gradient(-45deg, #6b8e23, #26113e, #12116f, #556b2f);
-    background-size: 400% 400%;
+    text-shadow: 0 0 10px #1c0639, 0 0 20px #05311c;
+    background: linear-gradient(-45deg, #5b164b, #26113e, #12116f, #690210);
+    background-size: 400% 400%;                           
     animation: gradientBG 8s ease infinite;
     color: white;
     text-align: center;
