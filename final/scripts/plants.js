@@ -2,12 +2,17 @@
 import { getPlants, displayPlants } from "./plantFacts.js";
 import { filterPlants } from "./filterPlants.js";
 import { updateFooterDates, setupHamburgerMenu } from "./headerFooter.js";
-// import { showModal } from "./plantmodal.js";
+import { displaySpotlights } from "./plantSpotlight.js";
+import { showVisitMessage } from "./welcome.js";
+import { showDailyTip } from "./tips.js";
 
 document.addEventListener("DOMContentLoaded", async () => {
 
   updateFooterDates();
-    setupHamburgerMenu();
+  setupHamburgerMenu();
+  displaySpotlights();
+  showVisitMessage();
+  showDailyTip();
    
   // Fetch all plants from JSON
   const allPlants = await getPlants();

@@ -14,9 +14,9 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/root.css">
     <link rel="stylesheet" href="styles/mediumroot.css">
-    <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="styles/home.css">
     <link rel="stylesheet" href="styles/largeroot.css">
-    <script type="module" src="scripts/form.js"></script>
+    <script type="module" src="scripts/plants.js"></script>
     <link rel="icon" href="data:,">
    <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -47,56 +47,22 @@
        
     <main>
         <h1>Home</h1>
+        <aside class="sidebar-message"></aside>
         <div class="hero">
-            <img class="hero_img" src="images/train_hero.webp" alt="Helper Utah Train">
+            <img class="hero_img" src="images/gradenhero.webp" alt="Gardening">
             
           <div class="cta">
-            <h2>Join the Chamber of Commerce</h2>
-            <p>Become a member today and enjoy the benefits of being part of the Helper Utah business community.</p>
+            <h2>Give Gardening Advice</h2>
+            <p>Share your gardening tips and tricks with our community.</p>
             <a href="join.html" id="join-button" class="button-style">Join Now</a>
 
           </div>
-        </div>
-        <div>
-        <h2 class="section-h2" >Upcoming Events</h2>
-    </div>
-    <section id="events"></section>
-    <h2 class="section-h2">Weather</h2>    
-<section id="weather-wrapper">
-    
-  <!-- Current Weather -->
-  <div id="weather-current">
-    <h3>Current Weather</h3>
-    <p>The current temperature in Helper, Utah is <span id="current-temp"></span></p>
-    <figure>
-      <img id="weather-icon" src="images/placeholder.png" alt="Weather icon">
-
-      <figcaption></figcaption>
-    </figure>
-  </div>
-
-  <!-- 3-Day Forecast -->
-  <div class="weather-column" id="forecast">
-    <h3>3-Day Forecast</h3>
-    <div class="forecast-day">
-      <h4>Friday</h4>
-      <img src="https://openweathermap.org/img/w/01d.png" alt="Sunny">
-      <p>Sunny</p>
-      <p>78°F</p>
-    </div>
-    <div class="forecast-day">
-      <h4>Saturday</h4>
-      <img src="https://openweathermap.org/img/w/03d.png" alt="Partly cloudy">
-      <p>Cloudy</p>
-      <p>80°F</p>
-    </div>
-    <div class="forecast-day">
-      <h4>Sunday</h4>
-      <img src="https://openweathermap.org/img/w/10d.png" alt="Showers">
-      <p>Chance of Rain</p>
-      <p>72°F</p>
-    </div>
-  </div>
+          <section id="advice">
+            <h2>Advice of the Day</h2>
+            <p id="dailyTip">Loading tip...</p>
+          </section>
+          
+       
 </section>
 <section id="spotlights">
     <h2 class="section-h2">Plant Spotlight</h2>

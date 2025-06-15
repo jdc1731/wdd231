@@ -87,7 +87,6 @@ color: white;
 .footer-content {
  display: flex;
  justify-content: space-between;
- align-items: flex-start;
  background-color: var(--primary-color);
  color: black;
  padding: 2rem 1rem;
