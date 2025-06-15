@@ -2,6 +2,21 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <script type="module" src="scripts/thankyou.js"></script>
+  <style>.button-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+  }
+  .button-link:hover {
+    background-color: #0056b3;
+  }
+  </style>
+
   <title>Thank You</title>
 </head>
 <body>
@@ -13,6 +28,9 @@
     <p><strong>Experience:</strong> <span id="displayExperience"></span></p>
     <p><strong>Advice:</strong> <span id="displayDescription"></span></p>
     <p><strong>Submitted At:</strong> <span id="displayTimestamp"></span></p>
+    <div class="button">
+        <a href="form.html" class="button-link">Return to Page</a>
+      </div>
   </main>
 </body>
 </html>
