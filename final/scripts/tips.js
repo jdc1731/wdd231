@@ -11,7 +11,7 @@ async function showDailyTip() {
     const dailyTip = tips[randomIndex].tip;
 
     // Inject it into the HTML
-    document.getElementById("dailyTip").textContent = dailyTip;
+    document.getElementById("dailyTip").textContent = dailyTip; 
   } catch (error) {
     console.error("Error loading tip of the day:", error);
     document.getElementById("dailyTip").textContent = "Unable to load tip.";
