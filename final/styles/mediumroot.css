@@ -16,12 +16,12 @@
     nav {
       position: relative;
       display: flex;
-      justify-content: flex-start; /* change from center to flex-start */
+      justify-content: flex-start; 
       align-items: center;
       height: 70px;
-      width: 100%; /* change from 350px to 100% so it fits the screen */
-      padding-left: 1rem; /* optional: adds some left space */
-      box-sizing: border-box; /* ensures padding doesn't add to total width */
+      width: 100%; 
+      padding-left: 1rem; 
+      box-sizing: border-box; 
     }
     
  
