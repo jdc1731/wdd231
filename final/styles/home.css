@@ -82,7 +82,7 @@ h1 {
     text-decoration: none;
   }
 
-  aside {
+  .sidebar-message {
     margin: 20px;
     padding: 20px;
     background-color: var(--background-color);
