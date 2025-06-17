@@ -70,3 +70,6 @@
     background-color: var(--secondary-color);
   }
   
+  .radio {
+    line-height: 2.5rem;
+  }
